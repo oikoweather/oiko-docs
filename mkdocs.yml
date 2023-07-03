@@ -1,0 +1,44 @@
+site_name: Documentation
+site_url: https://docs.oikolab.com
+nav:
+  - Overview: index.md
+  - Quickstart: quickstart.md
+  - Datasets: datasets.md
+  - References: references.md
+  - About: about.md
+theme:
+  name: material
+  features:
+    - content.code.copy
+  favicon: img/favicon_600.png
+  logo: img/logo-white.png
+  palette:
+    primary: light blue
+plugins:
+  - table-reader
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - tables
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra:
+  homepage: https://oikolab.com
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/oikoweather
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/oikolab
+copyright: Copyright &copy; 2023 Oikolab Ltd.
