@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://docs.oikolab.com/about/">
+        <link rel="canonical" href="https://docs.oikolab.com/quickstart/">
       
       
-        <link rel="prev" href="../references/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../datasets/">
       
       <link rel="icon" href="../img/favicon_600.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>About - Documentation</title>
+        <title>Quickstart - Documentation</title>
       
     
     
@@ -69,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-oikolab" class="md-skip">
+        <a href="#quick-start" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Quickstart
             
           </span>
         </div>
@@ -203,11 +205,52 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Quickstart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Quickstart
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-example" class="md-nav__link">
+    A simple example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -248,59 +291,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          About
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
         About
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#our-goal" class="md-nav__link">
-    Our goal
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questions" class="md-nav__link">
-    Questions?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -332,15 +327,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#our-goal" class="md-nav__link">
-    Our goal
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questions" class="md-nav__link">
-    Questions?
+  <a href="#a-simple-example" class="md-nav__link">
+    A simple example
   </a>
   
 </li>
@@ -360,16 +348,107 @@
                   
 
 
-<h1 id="about-oikolab">About Oikolab</h1>
-<h2 id="our-goal">Our goal</h2>
-<p>We started Oikolab to make climate and weather data easier to work with. We're a small operations but we pride
-in the fact that we run one of the largest and most comprehensive weather data repository in the world.</p>
-<blockquote>
-<p>All models are wrong, but some are useful.</p>
-</blockquote>
-<p>We </p>
-<h2 id="questions">Questions?</h2>
-<p>We love hearing from you! </p>
+<h1 id="quick-start">Quick Start</h1>
+<p><em>From zero to weather hero in 5 minutes.</em></p>
+<p>We need to know three things when you make a data request:</p>
+<ul>
+<li><strong>Where</strong> - so we know the location you're interested in. This can be a place name (we'll look up the lat/lon coordinate), the lat/lon coordiates, or a lat/lon boundary. You can even tell us hundreds of locations. </li>
+<li><strong>When</strong> - so we know the time span of the data to fetch, since we have more than 80 years of data. If you don't tell us, we'll just assume that you're interested in simple weather forecast.</li>
+<li><strong>What</strong> - so we know which weather parameters or dataset you're interested in. We have more than 60 parameters and many different datasets. If you don't tell us, we assume the usual suspects like the temperature, wind speed, and total precipitation etc.</li>
+</ul>
+<h2 id="a-simple-example">A simple example</h2>
+<p>Let's start with a simple example - requesting temperature, wind speed and surface solar radiation data for Toronto, Ontario for the last 30 years. </p>
+<p>The data is accessed REST API by specifying the location, parameters and time-range of the data needed.  </p>
+<div class="admonition note">
+<p class="admonition-title">Don't forget to use your API key!</p>
+<p>You can find your API key in your account when you log in.</p>
+</div>
+<p>ECMWF</p>
+<p><div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/weather&#39;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;param&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;wind_speed&#39;</span><span class="p">],</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>                         <span class="s1">&#39;location&#39;</span><span class="p">:</span> <span class="s1">&#39;Toronto, Ontario&#39;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>                         <span class="s1">&#39;start&#39;</span><span class="p">:</span> <span class="s1">&#39;1990-01-01&#39;</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>                         <span class="s1">&#39;end&#39;</span><span class="p">:</span> <span class="s1">&#39;2020-12-31&#39;</span><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>                 <span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+This will return data in JSON format, which we can convert to dataframe using Python's Pandas library. Note that we return the dataset name so you know the pedigree of the data source.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">json</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">weather_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">weather_data</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">],</span><span class="n">unit</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">),</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>                  <span class="n">data</span><span class="o">=</span><span class="n">weather_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>                  <span class="n">columns</span><span class="o">=</span><span class="n">weather_data</span><span class="p">[</span><span class="s1">&#39;columns&#39;</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th align="left">datetime</th>
+<th align="left">coordinates (lat,lon)</th>
+<th align="left">model (name)</th>
+<th align="right">model elevation (surface)</th>
+<th align="right">utc_offset (hrs)</th>
+<th align="right">temperature (degC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">2023-06-10 00:00:00</td>
+<td align="left">(43.653482, -79.383935)</td>
+<td align="left">era5</td>
+<td align="right">127.19</td>
+<td align="right">-5</td>
+<td align="right">18.48</td>
+</tr>
+<tr>
+<td align="left">2023-06-10 01:00:00</td>
+<td align="left">(43.653482, -79.383935)</td>
+<td align="left">era5</td>
+<td align="right">127.19</td>
+<td align="right">-5</td>
+<td align="right">17.96</td>
+</tr>
+<tr>
+<td align="left">2023-06-10 02:00:00</td>
+<td align="left">(43.653482, -79.383935)</td>
+<td align="left">era5</td>
+<td align="right">127.19</td>
+<td align="right">-5</td>
+<td align="right">17.29</td>
+</tr>
+<tr>
+<td align="left">2023-06-10 03:00:00</td>
+<td align="left">(43.653482, -79.383935)</td>
+<td align="left">era5</td>
+<td align="right">127.19</td>
+<td align="right">-5</td>
+<td align="right">16.44</td>
+</tr>
+</tbody>
+</table>
 
 
 

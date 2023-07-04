@@ -12,18 +12,21 @@
       
       
       
-        <link rel="next" href="about/">
+        <link rel="next" href="quickstart/">
       
-      <link rel="icon" href="img/favicon.ico">
+      <link rel="icon" href="img/favicon_600.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Oikolab Documentation</title>
+        <title>Documentation</title>
       
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -39,6 +42,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -49,11 +54,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -61,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -77,10 +85,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Oikolab Documentation" class="md-header__button md-logo" aria-label="Oikolab Documentation" data-md-component="logo">
+    <a href="https://oikolab.com" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -90,18 +97,20 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Oikolab Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Overview
             
           </span>
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -163,13 +172,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Oikolab Documentation" class="md-nav__button md-logo" aria-label="Oikolab Documentation" data-md-component="logo">
+    <a href="https://oikolab.com" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="img/logo-white.png" alt="logo">
 
     </a>
-    Oikolab Documentation
+    Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -192,12 +200,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
+          Overview
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        Home
+        Overview
       </a>
       
         
@@ -216,16 +224,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#why-oikolab" class="md-nav__link">
+    Why Oikolab?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#key-concepts" class="md-nav__link">
+    Key Concepts
   </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datasets-or-models" class="md-nav__link">
+    Datasets (or Models)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reanalysis-data" class="md-nav__link">
+    Reanalysis data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-units" class="md-nav__link">
+    Data Units
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -233,6 +268,51 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="datasets/" class="md-nav__link">
+        Datasets & Parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="references/" class="md-nav__link">
+        References
+      </a>
     </li>
   
 
@@ -279,16 +359,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#why-oikolab" class="md-nav__link">
+    Why Oikolab?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#key-concepts" class="md-nav__link">
+    Key Concepts
   </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datasets-or-models" class="md-nav__link">
+    Datasets (or Models)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reanalysis-data" class="md-nav__link">
+    Reanalysis data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-units" class="md-nav__link">
+    Data Units
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -307,21 +414,98 @@
                   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="overview">Overview</h1>
+<h2 id="why-oikolab">Why Oikolab?</h2>
+<p>We save you the most valuable, scarce, and non-renewable resource in the world - <u>your time</u>. Many of our users
+come to us after spending days or weeks trying to find and process historical weather data to do their analysis. </p>
+<figure>
+<p><img alt="Image title" src="https://oikostatic.nyc3.cdn.digitaloceanspaces.com/apoll17_era5.jpg" />
+  </p>
+<figcaption>NASA Apollo 17 image of the Earth taken on 7 December 1972 vs. ECMWF forecast initialized with ERA5 reanalysis</figcaption>
+</figure>
+<p>Oikolab has processed hundreds of terabytes of weather data that you can access in seconds - whether you require 1 month 
+or 80 years of weather data - so that you can focus on your analysis rather than spending hours or days 
+downloading and processing raw data.</p>
+<p>You don't have to take our word for it - here are some list of what our users do:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Predict crop yield for all of Northern India</li>
+<li>Develop new building code for Poland</li>
+<li>Predict retail sales </li>
+<li>Analyze smart-meter electricity data in the US</li>
+<li>... and many, many others. </li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<p>We get our data from <abbr title="European Centre for Medium-Range Weather Forecasts">ECMWF</abbr>, <abbr title="National Centers for Environmental Prediction">NCEP</abbr>, and FMI.</p>
+<h2 id="key-concepts">Key Concepts</h2>
+<p>A common question that we get is - where do we get our data? We get the from the same place every other weather data service providers get it from - various national weather agencies. These data are often freely available, but come in a format that  </p>
+<h3 id="datasets-or-models">Datasets (or Models)</h3>
+<p>The key </p>
+<p>We're always adding datasets - if you have a question, please feel free to reach out!</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th align="center">Dataset</th>
+<th align="center">Resolution</th>
+<th align="center">Coverage</th>
+<th align="center">Updates</th>
+<th align="center">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reanalysis</strong></td>
+<td align="center">ERA5 <br/> ERA5-Land</td>
+<td align="center">28km <br/> 9km</td>
+<td align="center">from 1940 <br/> from 1950</td>
+<td align="center">Daily<br/>Monthly</td>
+<td align="center"><a href="https://www.ecmwf.int/"><abbr title="European Centre for Medium-Range Weather Forecasts">ECMWF</abbr></a><br/><a href="https://www.ecmwf.int/"><abbr title="European Centre for Medium-Range Weather Forecasts">ECMWF</abbr></a></td>
+</tr>
+<tr>
+<td><strong>Global<br/>  Forecast</strong></td>
+<td align="center">GFS <br/> ICON<em> <br/> GDPS</em><br/></td>
+<td align="center">13/25km <br/> 13km <br/> 15km</td>
+<td align="center">16 days <br/> 5 days <br/> 10 days</td>
+<td align="center">6 hrs<br/>6 hrs<br/>12 hrs</td>
+<td align="center"><a href="https://www.weather.gov/ncep/"><abbr title="National Centers for Environmental Prediction">NCEP</abbr></a><br/> <a href="https://www.dwd.de">DWD</a><br/><a href="https://weather.gc.ca/canada_e.html">Environment Canada</a></td>
+</tr>
+<tr>
+<td><strong>Regional<br/>  Forecast</strong></td>
+<td align="center">NAM <br/>ICON-EU<br/>HRRR</td>
+<td align="center">2.5km<br/>6.5km<br/>2.5km</td>
+<td align="center">3 days<br/> 2 days <br/>2 days</td>
+<td align="center">6 hrs<br/>6 hrs<br/>6 hrs</td>
+<td align="center"><a href="https://www.weather.gov/ncep/"><abbr title="National Centers for Environmental Prediction">NCEP</abbr></a> <br/> <a href="https://www.dwd.de">DWD</a> <br/> <a href="https://www.weather.gov/ncep/"><abbr title="National Centers for Environmental Prediction">NCEP</abbr></a></td>
+</tr>
+<tr>
+<td><strong>Seasonal<br/>  Forecast</strong></td>
+<td align="center">CFS</td>
+<td align="center">100km</td>
+<td align="center">9 months</td>
+<td align="center">Daily</td>
+<td align="center"><a href="https://www.weather.gov/ncep/"><abbr title="National Centers for Environmental Prediction">NCEP</abbr></a></td>
+</tr>
+<tr>
+<td><strong>Ensemble Forecast</strong></td>
+<td align="center">GEFS  <br/> HREF*</td>
+<td align="center">25km <br/> 5km</td>
+<td align="center">10 days <br/> 3 days</td>
+<td align="center">6 hrs<br/>6 hrs</td>
+<td align="center"><a href="https://www.weather.gov/ncep/"><abbr title="National Centers for Environmental Prediction">NCEP</abbr></a> <br/> <a href="https://www.weather.gov/ncep/"><abbr title="National Centers for Environmental Prediction">NCEP</abbr></a></td>
+</tr>
+<tr>
+<td><strong>Air Quality Forecast</strong></td>
+<td align="center">SILAM</td>
+<td align="center">20km</td>
+<td align="center">5 days</td>
+<td align="center">Daily</td>
+<td align="center"><a href="https://en.ilmatieteenlaitos.fi/">FMI</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="reanalysis-data">Reanalysis data</h3>
+<p>Our historical dataset is based on <abbr title="European Centre for Medium-Range Weather Forecasts">ECMWF</abbr>'s reanalysis data, which is available with about 5 day delay. To provide continuity, we use the first 6 hours of the GFS data for the past 5 days to re-contruct the recent weather.</p>
+<h3 id="data-units">Data Units</h3>
+<p>With a single API call, you can request data volume anywhere from 10 KB to 10 GB. </p>
 
 
 
@@ -342,10 +526,40 @@ docs/
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Oikolab Ltd.
+    </div>
+  
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/oikoweather" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/oikolab" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
     </a>
   
 </div>
@@ -359,7 +573,7 @@ docs/
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.220ee61c.min.js"></script>
