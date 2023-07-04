@@ -1,9 +1,9 @@
 # Overview
 
-## 1. Why Oikolab?
+## Why Oikolab?
 
 We save you the most valuable, scarce, and non-renewable resource in the world - <u>your time</u>. Many of our users
-come to us after spending days or weeks trying to find historical weather data to do their analysis. 
+come to us after spending days or weeks trying to find and process historical weather data to do their analysis. 
 
 <figure markdown>
   ![Image title](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/apoll17_era5.jpg)
@@ -15,7 +15,7 @@ Oikolab has processed hundreds of terabytes of weather data that you can access 
 or 80 years of weather data - so that you can focus on your analysis rather than spending hours or days 
 downloading and processing raw data.
 
-You don't have to take our word for it - our data was/is used to:
+You don't have to take our word for it - here are some list of what our users do:
 
 * Predict crop yield for all of Northern India
 * Develop new building code for Poland
@@ -28,8 +28,14 @@ We get our data from ECMWF, NCEP, and FMI.
 *[ECMWF]: European Centre for Medium-Range Weather Forecasts
 *[NCEP]: National Centers for Environmental Prediction
 
+## Key Concepts
 
-### 1.1 Datasets (or Models)
+A common question that we get is - where do we get our data? We get the from the same place every other weather data service providers get it from - various national weather agencies. These data are often freely available, but come in a format that  
+
+
+### Datasets (or Models)
+
+The key 
 
 We're always adding datasets - if you have a question, please feel free to reach out!
 
@@ -42,12 +48,10 @@ Type                 |                  Dataset                  |             R
 **Ensemble Forecast**      |             GEFS  <br/> HREF*             |           25km <br/> 5km           |             10 days <br/> 3 days             |           6 hrs<br/>6 hrs           | [NCEP](https://www.weather.gov/ncep/) <br/> [NCEP](https://www.weather.gov/ncep/)
 **Air Quality Forecast**   |                   SILAM                   |                20km                |                    5 days                    |                Daily                | [FMI](https://en.ilmatieteenlaitos.fi/)
 
-### 1.2 Reanalysis data
+### Reanalysis data
 
+Our historical dataset is based on ECMWF's reanalysis data, which is available with about 5 day delay. To provide continuity, we use the first 6 hours of the GFS data for the past 5 days to re-contruct the recent weather.
 
-
-With a single API call, you can request data volume anywhere from 10 KB to 10 GB. 
-
-### 1.2 Data Units
+### Data Units
 
 With a single API call, you can request data volume anywhere from 10 KB to 10 GB. 

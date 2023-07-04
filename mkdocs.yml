@@ -3,7 +3,7 @@ site_url: https://docs.oikolab.com
 nav:
   - Overview: index.md
   - Quickstart: quickstart.md
-  - Datasets: datasets.md
+  - Datasets & Parameters: datasets.md
   - References: references.md
   - About: about.md
 theme:
@@ -13,7 +13,7 @@ theme:
   favicon: img/favicon_600.png
   logo: img/logo-white.png
   palette:
-    primary: light blue
+    primary: custom
 plugins:
   - table-reader
   - search
@@ -34,6 +34,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 extra:
   homepage: https://oikolab.com
   social:
@@ -41,4 +44,6 @@ extra:
       link: https://twitter.com/oikoweather
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/oikolab
+extra_css:
+  - stylesheets/extra.css
 copyright: Copyright &copy; 2023 Oikolab Ltd.

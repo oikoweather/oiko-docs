@@ -1,4 +1,4 @@
-# 2. Quick Start
+# Quick Start
 
 *From zero to weather hero in 5 minutes.*
 
@@ -8,7 +8,7 @@ We need to know three things when you make a data request:
 * **When** - so we know the time span of the data to fetch, since we have more than 80 years of data. If you don't tell us, we'll just assume that you're interested in simple weather forecast.
 * **What** - so we know which weather parameters or dataset you're interested in. We have more than 60 parameters and many different datasets. If you don't tell us, we assume the usual suspects like the temperature, wind speed, and total precipitation etc.
 
-## 2.1 A simple example 
+## A simple example 
 Let's start with a simple example - requesting temperature, wind speed and surface solar radiation data for Toronto, Ontario for the last 30 years. 
 
 The data is accessed REST API by specifying the location, parameters and time-range of the data needed.  
@@ -18,6 +18,7 @@ The data is accessed REST API by specifying the location, parameters and time-ra
 
     You can find your API key in your account when you log in.
 
+ECMWF
 
 ```py linenums="1"
 import requests
