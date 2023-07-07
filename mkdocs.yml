@@ -1,10 +1,12 @@
-site_name: Documentation
+site_name: Oikolab Weather API Documentation
 site_url: https://docs.oikolab.com
 nav:
   - Overview: index.md
   - Quickstart: quickstart.md
   - Datasets & Parameters: datasets.md
-  - References: references.md
+  - API Reference: references.md
+  - Tips & Tricks: tips-tricks.md
+  - FAQ: faq.md
   - About: about.md
 theme:
   name: material
