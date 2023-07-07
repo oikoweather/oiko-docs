@@ -1,9 +1,14 @@
+---
+title: Overview on Oikolab Weather Data 
+---
+
 # Overview
+
+> It is often said that 80% of data analysis is spent on the process of cleaning and preparing the data. *- Hadley Wickham, Chief Scientist at RStudio*
 
 ## Why Oikolab?
 
-We save you the most valuable, scarce, and non-renewable resource in the world - <u>your time</u>. Many of our users
-come to us after spending days or weeks trying to find and process historical weather data to do their analysis. 
+If you're a data scientist or an analyst who work with weather data, we save you the most valuable, scarce, and non-renewable resource in the world - <u>your time</u>. Many of our users come to us after spending days or weeks trying to find and process historical weather data to do their analysis. 
 
 <figure markdown>
   ![Image title](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/apoll17_era5.jpg)
@@ -30,8 +35,7 @@ To help understand our service, here are some key concepts to help you along.
 
 ### Data Source & Datasets (or Models)
 
-A common question that we get is - where do we get our data? We get them from the same place like everyone else - national weather agencies such as NCEP/NOAA, ECMWF, and Environment Canada. These data are often freely available, but come in a format that makes it very time consuming to download and use.
-
+A common question that we get is - where do we get our data? We get them from the same place like everyone else - national weather agencies such as NCEP/NOAA, ECMWF, and Environment Canada. These data are often publicly available, but come in a format (GRIB1/2ag) that is very time consuming to download and use.
 
 We're always adding datasets - if you have a question, please feel free to reach out!
 
@@ -46,10 +50,8 @@ We're always adding datasets - if you have a question, please feel free to reach
 
 ### Reanalysis data
 
-Our historical dataset is based on ECMWF's reanalysis data, which is available with about 5 day delay. To provide continuity, we use the first 6 hours of the GFS data for the past 5 days to re-contruct the recent weather. These are different from observation data in that it observation data as measurement samples and combine with other sources of data such as satellites and weather balloons to create a holistic picture of the atmosphere consistent with atmospheric physics.
-
-When calling our API, there is no need to specify the dataset.
+Our historical dataset is based on ECMWF's reanalysis data, which is available from 1940 to present with about 5 day delay. These are different from observation data in that it observation data as measurement samples and combine with other sources of data such as satellites and weather balloons to create a holistic picture of the atmosphere consistent with atmospheric physics. To provide continuity from historical period to forecast data, we use the first 6 hours of the GFS data for the past 5 days to re-contruct the recent weather. 
 
 ### Data Units
 
-Unlike typical API service, our usage is not metered by the number of API calls. With a single API call, the returned data volume can range anywhere from 10 KB to 10 GB so we define one unit as a single parameter for a location for a period of one month.
+Unlike typical API service, our usage is not metered by the number of API calls. With a single API call, the returned data volume can range anywhere from 10 KB to 10 GB so we define one unit as a single parameter for a location for a period of one month for a time-series data, and 1<sup>o</sup> latitude by 1<sup>o</sup> longitude by 1 month for NetCDF area format.

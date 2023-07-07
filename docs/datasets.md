@@ -1,12 +1,24 @@
+---
+title: Weather Datasets & Parameters
+---
+
+
 # Datasets
 
-We provide access to:
+## Dataset Update Schedule
 
-* Historical Reanalysis Data (ERA5, ERA5Land)
-* Global Forecast Data (GFS, ICON)
-* Regional Forecast Data (HRRR, HRDPS)
-* Seasonal Forecast Data ()
-* Archived Forecast Data
+Everyday, we download and process several terabytes of data. The following table shows the datasets and its update interval.
+
+| Update Schedule | Datasets
+|:----------------| --------------
+| Daily           | ERA5, ERA5Land, Silam, CFS
+| Every 6 Hours   | GFS, GEFS, HRRR
+
+For GFS and HRRR, we archive forecast data generated at 00Z and 12Z for up to 2 years.
+
+## Parameters
+
+The following is a list of parameters available through Oikolab API. Please note that not all parameters will be available for every model.
 
 ### Group 1: Temperature
   

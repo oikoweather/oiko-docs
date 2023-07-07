@@ -30,7 +30,7 @@ r = requests.get('https://api.oikolab.com/weather',
 !!! note "Don't forget to use your API key!"
     You can find your API key in profile page when you log into your account.
 
-This will return data in JSON format, which we can convert to dataframe using Python's Pandas library. Note that we return the dataset name so you know the pedigree of the data source.
+This will return data in JSON format, which we can convert to dataframe using Python's Pandas library. Note that we return the dataset name so you know the which dataset was used to generate the data.
 
 ```py linenums="1"
 import pandas as pd
@@ -44,4 +44,22 @@ df = pd.DataFrame(index=pd.to_datetime(weather_data['index'],unit='s'),
 ```
 
 {{ read_csv('./data/sample.csv') }}
+
+For regional dataset, you can provide the bounding latitude and longitude values. In this case, we'll return the data in NetCDF format. For example, the following request will return HRRR forecast data for California. Note that when calling datasets such as this, the response can be several gigabytes in size and can take more than a few seconds to process.
+
+```py linenums="1"
+import requests
+
+api_key = 'your-api-key'
+
+r = requests.get('https://api.oikolab.com/weather',
+                 params={'param': ['temperature', 'wind_speed'],
+                         'north': 65,
+                         'south': 45,
+                         'east': -110,
+                         'west': -130,
+                         'model': 'hrrr'}
+                 headers={'api-key': api_key}
+                 )
+```
 

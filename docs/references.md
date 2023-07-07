@@ -62,7 +62,7 @@ r = requests.get('https://api.oikolab.com/airquality',
 
 ## /epw
 
-This API will return an EPW file for the given location and year (if applicable). Each EPW files will be 250 units. The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. 
+This API will return an EPW file for the given location and year (if applicable). Each EPW files will be 250 units. The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. This is most easily done via our Weather Downloader App, but if you require many hundreds of EPW files, this is probably easier to do.
 
 Parameter | Description            | Notes
 --------- |------------------------| -------------
@@ -71,4 +71,30 @@ year      | year for AMY           | If not specified, a TMY file will be return
 lat       | latitude(s)            | If location is not provided.
 lon       | longitude(s)           | If location is not provided.
 
+```py linenums="1"
+import requests
 
+api_key = 'your-api-key'
+
+r = requests.get('https://api.oikolab.com/epw',
+                 params={'lat': 32,
+                         'lat': 32,
+                         'year': 2020,
+                 headers={'api-key': api_key}
+                 )
+```
+
+
+## /datasets
+
+Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, use this API endpoint. There is no cost associated with this.
+
+```py linenums="1"
+import requests
+
+api_key = 'your-api-key'
+
+r = requests.get('https://api.oikolab.com/datasets'
+                 headers={'api-key': api_key}
+                 )
+```
