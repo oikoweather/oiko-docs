@@ -20,7 +20,8 @@ west    | longitude west                         | For bounding box.
 model   | era5, era5land, gfs, gefs, hrrr, cfs   | Use to specify dataset if applicable.
 format  | json, csv, or netcdf                   | Defaults to json
 
-#### Example
+#### Example 1
+
 ```py linenums="1"
 import requests
 
@@ -31,6 +32,25 @@ r = requests.get('https://api.oikolab.com/weather',
                          'lat': [32, 24, 40],
                          'lat': [32, 24, 40],
                          'location_id': ['store1', 'store2','store3'],
+                         'start': '2022-01-01',
+                         'end': '2022-12-31'}
+                 headers={'api-key': api_key}
+                 )
+```
+
+#### Example 2
+
+```py linenums="1"
+import requests
+
+api_key = 'your-api-key'
+
+r = requests.get('https://api.oikolab.com/weather',
+                 params={'param': ['temperature', 'wind_speed'],
+                         'north': 64,
+                         'south': 40,
+                         'east': -100,
+                         'west': -120,
                          'start': '2022-01-01',
                          'end': '2022-12-31'}
                  headers={'api-key': api_key}
@@ -62,7 +82,9 @@ r = requests.get('https://api.oikolab.com/airquality',
 
 ## /epw
 
-This API will return an EPW file for the given location and year (if applicable). Each EPW files will be 250 units. The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. This is most easily done via our Weather Downloader App, but if you require many hundreds of EPW files, this is probably easier to do.
+This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. This is most easily done via our [Weather Downloader App](https://downloader.oikolab.com), but if you require many hundreds of EPW files, this is probably easier to do.
+
+
 
 Parameter | Description            | Notes
 --------- |------------------------| -------------
@@ -98,3 +120,6 @@ r = requests.get('https://api.oikolab.com/datasets'
                  headers={'api-key': api_key}
                  )
 ```
+
+*[ECMWF]: European Centre for Medium-Range Weather Forecasts
+*[NCEP]: National Centers for Environmental Prediction

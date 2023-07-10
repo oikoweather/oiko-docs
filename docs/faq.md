@@ -2,19 +2,35 @@
 title: Oikolab FAQ
 ---
 
-
 ### What does 'Oiko' mean?
 
-The word 'oiko' derives from Greek 'oikos', which is the origin of the word 'eco'. In Korean, this also means 'cucumber nose' that we thought was cute. :smile:
+The word 'oiko' derives from Greek 'oikos', which is the origin of the word 'eco'. 
 
-### How do we cite the data?
+
+!!! note "Did you know?"
+    In Korean, 'oiko' is a homonym of 'cucumber nose'.
+
+### Citation
 
 Each API response will contain a citation to the dataset used. 
 
-### How do you fill in the gaps between ERA5 and recent (< 5 days) historical weather?
+### Recent (< 5 days) historical data
+
+New weather forecast data is created every 6 to 12 hours.
+
+!!! note "Checking data source"
+    With every data timestamp, we indicate the dataset source.
 
 
-### What is the difference between Reanalysis data and Observation data?
+### Reanalysis vs. Observation data
+
+We get this question a lot, especially from those who are used to getting weather data from weather stations. In engineering and science, we recognize that perfect observation is not possible and even if you're measuring air temperature with a digital thermometer, it is a modelled representation of the air temperature. 
+
+What the thermometer is telling you is that according to the model of the resistence values of a thermistor, the current reading corresponds to a temperature. Notice that this is not the temperature of the air but the temperature of the thermistor itself - here is an implicit assumption that the temperature of the thermistor will be approximately the same as the air. 
+
+In reality, we know that if there is a large warm body nearby (e.g. Boeing 747 taxing nearby) this measurement will be skewed. We know this intuitively - if we were sweating in Hong Kong in July and the temperature reads -20 <sup>o</sup>C, it's probably likely that the reading is wrong.
+
+So how do we know if what we're measuring is correct? The trick is to combine all sources of data - so that instead of a single measurement, we take billions of sample data, and we combine them with our known understanding of atmospheric physics to yield the most representative estimate of the weather.
 
 > All models are wrong, but some are useful. *- George Box*
 
@@ -28,3 +44,15 @@ Each API response will contain a citation to the dataset used.
 
 In general, we recommend using Reanalysis data for most data-intensive application, such as training machine learning models, building energy simulation and forecast prediction. For extreme weather events, it may be more reliable to consult the weather station observation if there is a station nearby. If you're not sure, we're always happy to provide guidance - please feel free to reach out.
 
+
+### Data Units
+
+Unlike typical API service, our usage is not metered by the number of API calls. With a single API call, the returned data volume can range anywhere from 10 KB to 10 GB so we define one unit as a single parameter for a location for a period of one month for a time-series data, and 1<sup>o</sup> latitude by 1<sup>o</sup> longitude by 1 month for NetCDF area format.
+
+For example, requesting 10 years of temperature and wind speed data for 10 locations is:
+
+* 10 years x 12 months x 2 parameters x 10 locations = 2400 units
+
+Alternatively, an area box for Texas will be:
+
+* 11<sup>o</sup> latitude x 13<sup>o</sup> longitude x 1 month x 5 parameters = 715units

@@ -5,7 +5,18 @@ title: Weather Datasets & Parameters
 
 # Datasets
 
-## Dataset Update Schedule
+### Datasets
+
+| Dataset  | Notes
+|:---------| --------------
+| ERA5     | ERA5 is the latest generation of the reanalysis dataset produced by ECMWF, updated daily.  The next generation of reanalysis data, ERA6, is currently in works and is expected to be released sometime in 2024. Surface data is available from 1940 to present with 5 days delay.
+| ERA5Land | ERA5Land data is a high-resolution dataset covering only the land, with about 9km x 9km resolution. Data is available from 1950 to present with 5 day delay.
+| GFS      | Global Forecast System
+| CFS      | Climate Forecast System
+| HRRR     | High-Resolution Rapid Refresh (HRRR) model
+| SILAM    | SILAM is air quality dataset from FMI
+
+### Update Schedule
 
 Everyday, we download and process several terabytes of data. The following table shows the datasets and its update interval.
 
@@ -13,6 +24,8 @@ Everyday, we download and process several terabytes of data. The following table
 |:----------------| --------------
 | Daily           | ERA5, ERA5Land, Silam, CFS
 | Every 6 Hours   | GFS, GEFS, HRRR
+
+### Dataset Archive
 
 For GFS and HRRR, we archive forecast data generated at 00Z and 12Z for up to 2 years.
 
