@@ -23,7 +23,7 @@ We get this question a lot, especially from those who are used to getting weathe
 
 What the thermometer is telling you is that according to the model of the resistence values of a thermistor, the current reading corresponds to a temperature. Notice that this is not the temperature of the air but the temperature of the thermistor itself - here is an implicit assumption that the temperature of the thermistor will be approximately the same as the air. 
 
-In reality, we know that if there is a large warm body nearby (e.g. Boeing 747 taxing nearby) this measurement will be skewed. We know this intuitively - if we were sweating in Hong Kong in July and the temperature reads -20 <sup>o</sup>C, it's probably likely that the reading is wrong.
+In reality, we know that if there is a large warm body nearby (e.g. a Boeing 747 taxing) this measurement will be skewed. We know this intuitively - if we were sweating in Hong Kong in July and the temperature reads -20 <sup>o</sup>C, it's likely that the reading is wrong.
 
 So how do we know if what we're measuring is correct? The trick is to combine all sources of data - so that instead of a single measurement, we take billions of sample data, and we combine them with our known understanding of atmospheric physics to yield the most representative estimate of the weather.
 
@@ -35,11 +35,11 @@ So how do we know if what we're measuring is correct? The trick is to combine al
 </figure>
 
 
-|                                           | Reanalyssi Data                                                                                                                                                                                                                                           | Weather Station Data
-|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------
-| **Data Collection Method**                | Reanalysis data is generated using numerical weather prediction models that assimilate various observational data sources, including weather station observations, satellite measurements, and other available data into its atmospheric physics model.   | Weather station observation data is collected directly from ground-based weather stations that measure various meteorological variables like temperature, humidity, wind speed, and precipitation. Typically, these don't include solar radiation data.
+|                                           | Reanalysis Data                                                                                                                                                                                                                                                       | Weather Station Data
+|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------
+| **Data Collection Method**                | Reanalysis data is generated using numerical weather prediction models that assimilate various observational data sources, including weather station observations, satellite measurements, and other available data into its atmospheric physics model.               | Weather station observation data is collected directly from ground-based weather stations that measure various meteorological variables like temperature, humidity, wind speed, and precipitation. Typically, these don't include solar radiation data.
 | **Data Assimilation and Quality Control** | Reanalysis data undergoes a rigorous process of data assimilation, where observational data from various sources are combined with the model's output to generate a representation of the atmosphere that is consistent with our understanding of atmosheric physics. | Weather station observations are subject to quality control procedures as well, but the level of scrutiny may vary depending on the data source and the organization responsible for data management. 
-| **Limitations**                           | Model resolution                                                                                                                                                                                                                                          | Observation Bias and Quality Control. Limited sets of variables.
+| **Limitations**                           | Model resolution                                                                                                                                                                                                                                                      | Observation Bias and Quality Control. Limited sets of variables.
 
 In general, we recommend using Reanalysis data for most data-intensive application, such as training machine learning models, building energy simulation and forecast prediction. For extreme weather events, it may be more reliable to consult the weather station observation if there is a station nearby. If you're not sure, we're always happy to provide guidance - please feel free to reach out.
 
@@ -54,7 +54,7 @@ For example, requesting 10 years of temperature and wind speed data for 10 locat
 
 Alternatively, an area box for Texas will be:
 
-* 11<sup>o</sup> latitude x 13<sup>o</sup> longitude x 1 month x 5 parameters = 715units
+* 11<sup>o</sup> latitude x 13<sup>o</sup> longitude x 1 month x 5 parameters = 715 units
 
 
 ### Can you provide custom datasets?
