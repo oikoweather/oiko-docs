@@ -6,7 +6,7 @@ title: Overview on Oikolab Weather Data
 
 ## Why Oikolab?
 
-If you're a data scientist or an analyst who frequently work with large volumes of weather data, we save you the most valuable, scarce, and non-renewable resource in the world - **<u>your time</u>**. Many of our users come to us after spending days or weeks trying to find and process weather data even before starting their analysis. Our goal is to give that time back to you.
+Data scientists or analysts often spend days or weeks looking for and processing historical weather data before they can begin their analysis. Here’s where Oikolab comes in – we do the work, so you don’t have to. We save you the most valuable, scarce, and non-renewable resource in the world – **<u>your time</u>**.
 
 We provide post-processed datasets from national weather agencies such as NCEP/NOAA, ECMWF, and Environment Canada. These data are often publicly available, but come in a format (GRIB) that is very time consuming to download and use.
 
@@ -36,7 +36,7 @@ We provide post-processed datasets from national weather agencies such as NCEP/N
     ![SILAM Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/silam.png)
 
 
-Oikolab has post-processed hundreds of terabytes of weather data that you can access in seconds - whether you require 1 month or 80 years of weather data - so that you can focus on your analysis rather than spending hours or days downloading and processing raw data.
+Ready to jump right into your analysis? Oikolab has post-processed hundreds of terabytes of weather data that you can access in seconds - whether you require 1 month or 80 years of weather data.
 
 Here's some examples of what you can do with Oikolab API:
 
