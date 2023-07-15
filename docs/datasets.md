@@ -5,7 +5,7 @@ title: Weather Datasets & Parameters
 
 # Datasets
 
-### Datasets
+The following datasets are currently available via API.
 
 | Dataset                                                                           | Notes
 |:----------------------------------------------------------------------------------| --------------
@@ -15,8 +15,6 @@ title: Weather Datasets & Parameters
 | [CFS](https://cfs.ncep.noaa.gov/)                                                 | Climate Forecast System from NCEP
 | [HRRR](https://rapidrefresh.noaa.gov/hrrr/)                                       | High-Resolution Rapid Refresh (HRRR) model
 | [SILAM](https://silam.fmi.fi/)                                                    | SILAM is air quality dataset from the [Finnish Meteorological Institute (FMI)](https://en.ilmatieteenlaitos.fi/)
-
-### Dataset Archive
 
 For GFS and HRRR, we archive forecast data generated at 00Z and 12Z for up to 2 years.
 
