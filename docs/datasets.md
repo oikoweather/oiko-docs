@@ -7,23 +7,14 @@ title: Weather Datasets & Parameters
 
 ### Datasets
 
-| Dataset  | Notes
-|:---------| --------------
-| ERA5     | ERA5 is the latest generation of the reanalysis dataset produced by ECMWF, updated daily.  The next generation of reanalysis data, ERA6, is currently in works and is expected to be released sometime in 2024. Surface data is available from 1940 to present with 5 days delay.
-| ERA5Land | ERA5Land data is a high-resolution dataset covering only the land, with about 9km x 9km resolution. Data is available from 1950 to present with 5 day delay.
-| GFS      | Global Forecast System
-| CFS      | Climate Forecast System
-| HRRR     | High-Resolution Rapid Refresh (HRRR) model
-| SILAM    | SILAM is air quality dataset from FMI
-
-### Update Schedule
-
-Everyday, we download and process several terabytes of data. The following table shows the datasets and its update interval.
-
-| Update Schedule | Datasets
-|:----------------| --------------
-| Daily           | ERA5, ERA5Land, Silam, CFS
-| Every 6 Hours   | GFS, GEFS, HRRR
+| Dataset                                                                           | Notes
+|:----------------------------------------------------------------------------------| --------------
+| [ERA5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5)            | ERA5 is the latest generation of the reanalysis dataset produced by ECMWF, updated daily.  The next generation of reanalysis data, ERA6, is currently in works and is expected to be released sometime in 2024. Surface data is available from 1940 to present with 5 days delay.
+| [ERA5Land](https://www.ecmwf.int/en/era5-land)                                    | ERA5Land data is a high-resolution dataset covering only the land, with about 9km x 9km resolution. Data is available from 1950 to present with 5 day delay.
+| [GFS](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php) | Global Forecast System
+| [CFS](https://cfs.ncep.noaa.gov/)                                                 | Climate Forecast System from NCEP
+| [HRRR](https://rapidrefresh.noaa.gov/hrrr/)                                       | High-Resolution Rapid Refresh (HRRR) model
+| [SILAM](https://silam.fmi.fi/)                                                    | SILAM is air quality dataset from the [Finnish Meteorological Institute (FMI)](https://en.ilmatieteenlaitos.fi/)
 
 ### Dataset Archive
 

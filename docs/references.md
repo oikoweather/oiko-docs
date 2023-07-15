@@ -2,6 +2,8 @@ The following endpoints are available.
 
 ## /weather 
 
+This is the basic entry point into our datasets. Following options are available.
+
 Parameter | Description                            | Notes
 --------- |----------------------------------------| -------------
 param   | Valid parameters                       | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover
@@ -20,7 +22,7 @@ west    | longitude west                         | For bounding box.
 model   | era5, era5land, gfs, gefs, hrrr, cfs   | Use to specify dataset if applicable.
 format  | json, csv, or netcdf                   | Defaults to json
 
-#### Example 1
+**Example 1 - Requesting multiple locations**
 
 ```py linenums="1"
 import requests
@@ -38,7 +40,9 @@ r = requests.get('https://api.oikolab.com/weather',
                  )
 ```
 
-#### Example 2
+**Example 2 - Requesting region **
+
+Let's say we wanted to look at the regional weather forecast for all of New England. We can request the data by specifying the bounding box for New England as shown below:
 
 ```py linenums="1"
 import requests
@@ -46,16 +50,18 @@ import requests
 api_key = 'your-api-key'
 
 r = requests.get('https://api.oikolab.com/weather',
-                 params={'param': ['temperature', 'wind_speed'],
-                         'north': 64,
-                         'south': 40,
-                         'east': -100,
-                         'west': -120,
-                         'start': '2022-01-01',
-                         'end': '2022-12-31'}
+                 params={'north': 47.38,
+                         'south': 39.5,
+                         'east': -65.2,
+                         'west': -80.8,
+                         'model': 'hrrr'}
                  headers={'api-key': api_key}
                  )
 ```
+
+This will return the data in NetCDF format, which we can see here:
+
+![HRRR Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/hrrr-ne.png)
 
 
 ## /airquality
@@ -83,7 +89,6 @@ r = requests.get('https://api.oikolab.com/airquality',
 ## /epw
 
 This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. This is most easily done via our [Weather Downloader App](https://downloader.oikolab.com), but if you require many hundreds of EPW files, this is probably easier to do.
-
 
 
 Parameter | Description            | Notes

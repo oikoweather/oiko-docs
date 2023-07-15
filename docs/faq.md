@@ -10,10 +10,6 @@ The word 'oiko' derives from Greek 'oikos', which is the origin of the word 'eco
 !!! note "Did you know?"
     In Korean, 'oiko' is a homonym of 'cucumber nose'.
 
-### Citation
-
-Each API response will contain a citation to the dataset used. 
-
 ### Recent (< 5 days) historical data
 
 New weather forecast data is created every 6 to 12 hours.
@@ -34,6 +30,10 @@ So how do we know if what we're measuring is correct? The trick is to combine al
 
 > All models are wrong, but some are useful. *- George Box*
 
+<figure markdown>
+  ![Image title](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/apoll17_era5.jpg)
+  <figcaption>NASA Apollo 17 image of the Earth taken on 7 December 1972 vs. ECMWF forecast initialized with ERA5 reanalysis</figcaption>
+</figure>
 
 
 |                                           | Reanalyssi Data                                                                                                                                                                                                                                           | Weather Station Data
@@ -47,7 +47,7 @@ In general, we recommend using Reanalysis data for most data-intensive applicati
 
 ### Data Units
 
-Unlike typical API service, our usage is not metered by the number of API calls. With a single API call, the returned data volume can range anywhere from 10 KB to 10 GB so we define one unit as a single parameter for a location for a period of one month for a time-series data, and 1<sup>o</sup> latitude by 1<sup>o</sup> longitude by 1 month for NetCDF area format.
+With a single API call, the returned data size can range anywhere from 10 KB to 10 GB so we meter the usage based on the concept of 'data unit'. One data unit is equivalent to a single parameter for a location for a period of one month for a time-series data, or 1<sup>o</sup> latitude by 1<sup>o</sup> longitude by 1 month for NetCDF area format.
 
 For example, requesting 10 years of temperature and wind speed data for 10 locations is:
 

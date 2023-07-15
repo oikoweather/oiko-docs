@@ -2,16 +2,16 @@
 
 *From zero to weather hero in 5 minutes.*
 
-So - how do you get weather data via API? When you make a data request via API, we need to know three things:
+So - how do you get weather data via API? When you make a data request via API, we need to know three key things:
 
-* **Where** - so we know the location you're interested in. This can be a place name (we'll look up the lat/lon coordinate), the lat/lon coordiates, or a lat/lon boundary. You can even tell us hundreds of locations. 
+* **Where** - so we know the location you're interested in. This can be an address or a city name that we can look up, the latitutde/longitude coordiates, or a latitude/longitude boundary. 
 * **When** - so we know the time span of the data to fetch, since we have more than 80 years of data. If you don't tell us, we'll just assume that you're interested in simple weather forecast.
 * **What** - so we know which weather parameters or dataset you're interested in. We have more than 60 parameters and many different datasets. If you don't tell us, we assume the usual suspects like the temperature, wind speed, and total precipitation etc.
 
 ## Basic Example 
-Let's start with a simple example - requesting temperature, wind speed and surface solar radiation data for Toronto, Ontario for the last 30 years (1990 to 2020). 
+Let's start with a simple example - requesting temperature and wind speed data for Toronto, Ontario for the last 30 years (1990 to 2020). 
 
-The data is accessed REST API by specifying the location, parameters and time-range of the data needed.  
+The data is accessed using REST API by specifying the location, parameters and time-range of the data needed as shown below.
 
 
 ```py linenums="1"
@@ -44,22 +44,3 @@ df = pd.DataFrame(index=pd.to_datetime(weather_data['index'],unit='s'),
 ```
 
 {{ read_csv('./data/sample.csv') }}
-
-For regional dataset, you can provide the bounding latitude and longitude values. In this case, we'll return the data in NetCDF format. For example, the following request will return HRRR forecast data for California. Note that when calling datasets such as this, the response can be several gigabytes in size and can take more than a few seconds to process.
-
-```py linenums="1"
-import requests
-
-api_key = 'your-api-key'
-
-r = requests.get('https://api.oikolab.com/weather',
-                 params={'param': ['temperature', 'wind_speed'],
-                         'north': 65,
-                         'south': 45,
-                         'east': -110,
-                         'west': -130,
-                         'model': 'hrrr'}
-                 headers={'api-key': api_key}
-                 )
-```
-
