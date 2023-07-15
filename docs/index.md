@@ -38,7 +38,7 @@ We provide post-processed datasets from national weather agencies such as NCEP/N
 
 Ready to jump right into your analysis? Oikolab has post-processed hundreds of terabytes of weather data that you can access in seconds - whether you require 1 month or 80 years of weather data.
 
-Here's some examples of what you can do with Oikolab API:
+Here are some examples of what you can do with Oikolab API:
 
 * **Building Simulation** - Download AMY EPW files for any location from 1940 to present. 
 * **Asset Management** - Have assets in hundreds of locations? Download time-series weather data for all locations with a single API call.
@@ -47,7 +47,7 @@ Here's some examples of what you can do with Oikolab API:
 
 ## Dataset Overview
 
-We're always adding datasets - if you have a question, please feel free to reach out!
+We're always adding datasets. If you need something that we don’t have, please feel free to reach out and ask!
 
 | Type                        |       Dataset        |   Resolution   |         Coverage          |      Updates      | Source 
 |-----------------------------|:--------------------:|:--------------:|:-------------------------:|:-----------------:| :----: 
