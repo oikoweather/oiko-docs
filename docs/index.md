@@ -25,7 +25,11 @@ We provide post-processed datasets from national weather agencies such as NCEP/N
 
 === "GEFS"
 
-    ![GFS Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/gefs.png)
+    ![GEFS Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/gefs.png)
+
+=== "CFS"
+
+    ![CFS Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/cfs.png)
 
 === "HRRR"
 
