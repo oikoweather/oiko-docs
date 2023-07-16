@@ -1,4 +1,4 @@
-site_name: Oikolab Weather API Documentation
+site_name: Documentation
 site_url: https://docs.oikolab.com
 nav:
   - Overview: index.md
@@ -43,6 +43,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 extra:
   homepage: https://oikolab.com
+  generator: false
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/oikoweather
