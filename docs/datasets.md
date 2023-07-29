@@ -54,13 +54,15 @@ The following is a list of parameters available through Oikolab API. Please note
 ### Group 3: Radiation
 
 
-| Parameter                        | Unit              | Description    
-|:---------------------------------|:------:           |---------------
-| surface_solar_radiation          | *W/m<sup>2</sup>* | Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth. This parameter comprises both direct and diffuse solar radiation.
-| surface_thermal_radiation        | *W/m<sup>2</sup>* | Thermal radiation (longwave) emitted by the atmosphere and clouds that reaches a horizontal plane at the surface of the Earth.
-| surface_direct_solar_radiation   | *W/m<sup>2</sup>* | Direct solar radiation (shortwave) reaching the surface of the Earth, passing through a horizontal plane.
-| direct_normal_solar_radiation    | *W/m<sup>2</sup>* | Solar radiation received per unit area normal to the direction of the sun.
-| surface_diffuse_solar_radiation  | *W/m<sup>2</sup>* | Scattered solar radiation received per horizontal unit area on the surface.
+| Parameter                       | Unit              | Description    
+|:--------------------------------|:------:           |---------------
+| surface_solar_radiation         | *W/m<sup>2</sup>* | Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth. This parameter comprises both direct and diffuse solar radiation.
+| surface_net_solar_radiation     | *W/m<sup>2</sup>* | Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth minus the amount reflected by the Earth's surface (which is governed by the albedo). This value is positive downwards, following the ECMWF convention.
+| surface_thermal_radiation       | *W/m<sup>2</sup>* | Thermal radiation (longwave) emitted by the atmosphere and clouds that reaches a horizontal plane at the surface of the Earth.
+| surface_net_thermal_radiation   | *W/m<sup>2</sup>* | This parameter is the difference between downward and upward thermal radiation at the surface of the Earth. This value is positive downwards, following the ECMWF convention.
+| surface_direct_solar_radiation  | *W/m<sup>2</sup>* | Direct solar radiation (shortwave) reaching the surface of the Earth, passing through a horizontal plane.
+| direct_normal_solar_radiation   | *W/m<sup>2</sup>* | Solar radiation received per unit area normal to the direction of the sun.
+| surface_diffuse_solar_radiation | *W/m<sup>2</sup>* | Scattered solar radiation received per horizontal unit area on the surface.
 
 ### Group 4: Pressure, Humidity, & Precipitation
 
