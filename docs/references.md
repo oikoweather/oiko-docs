@@ -26,23 +26,29 @@ format    | json, csv, or netcdf              | Defaults to json format.
 
 **Example 1 - Requesting multiple locations**
 
-```py linenums="1"
-import requests
+=== "Python"
+    ```py linenums="1"
+    import requests
+    
+    api_key = 'your-api-key'
+    
+    r = requests.get('https://api.oikolab.com/weather',
+                     params={'param': ['temperature', 'wind_speed'],
+                             'lat': [32, 24, 40],
+                             'lat': [32, 24, 40],
+                             'location_id': ['store1', 'store2','store3'],
+                             'start': '2022-01-01',
+                             'end': '2022-12-31'}
+                     headers={'api-key': api_key}
+                     )
+    ```
 
-api_key = 'your-api-key'
+=== "R"
+    ```r linenums="1"
+    test
+    ```
 
-r = requests.get('https://api.oikolab.com/weather',
-                 params={'param': ['temperature', 'wind_speed'],
-                         'lat': [32, 24, 40],
-                         'lat': [32, 24, 40],
-                         'location_id': ['store1', 'store2','store3'],
-                         'start': '2022-01-01',
-                         'end': '2022-12-31'}
-                 headers={'api-key': api_key}
-                 )
-```
-
-**Example 2 - Requesting region **
+**Example 2 - Requesting a region**
 
 Let's say we wanted to look at the regional weather forecast for all of New England. We can request the data by specifying the bounding box for New England as shown below:
 
@@ -64,6 +70,19 @@ r = requests.get('https://api.oikolab.com/weather',
 This will return the data in NetCDF format, which we can see here:
 
 ![HRRR Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/hrrr-ne.png)
+
+## /archivedforecast
+
+Up to 4 years of HRRR model runs and 2 years of GFS runs (00z and 12z) are archived.
+
+Parameter | Description                       | Notes
+--------- |-----------------------------------| -------------
+param     | Valid parameters                  | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover
+location  | city name or zipcode              | This value is used to look up latitude/longitude.
+lat       | latitude(s)                       | If location is not provided. Up to 100 locations allowed.
+lon       | longitude(s)                      | If location is not provided. Up to 100 locations allowed.
+utc_cycle | datetime of the run (00z or 12z)  | This specifies the model run.
+model     | `gfs` or `hrrr`                   | This specifies the archived model (defaults to `gfs`).
 
 
 ## /airquality
@@ -116,7 +135,7 @@ r = requests.get('https://api.oikolab.com/epw',
 
 ## /datasets
 
-Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, use this API endpoint. There is no cost associated with this.
+Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, use this API endpoint. This API call does not use any data units.
 
 ```py linenums="1"
 import requests
@@ -126,6 +145,22 @@ api_key = 'your-api-key'
 r = requests.get('https://api.oikolab.com/datasets'
                  headers={'api-key': api_key}
                  )
+```
+
+This call will return data in JSON format that lists the datasets the available date range for each dataset as shown below.
+
+```js linenums="1"
+{'era5': {'start': '1940-01-01 00 UTC', 
+          'end': '2023-07-18 14 UTC'}, 
+ 'hrrr': {'forecast_start': '2023-07-24 00 UTC', 
+          'forecast_end': '2023-07-26 00 UTC'}, 
+ 'gfs': {'forecast_start': '2023-07-23 18 UTC', 
+         'forecast_end': '2023-08-08 06 UTC'}, 
+ 'cfs': {'forecast_start': '2023-07-23 06 UTC', 
+         'forecast_end': '2023-11-01 00 UTC'}, 
+ 'silam': {'forecast_start': '2023-07-22 00 UTC', 
+           'forecast_end': '2023-07-27 00 UTC'}, 
+}
 ```
 
 *[ECMWF]: European Centre for Medium-Range Weather Forecasts
