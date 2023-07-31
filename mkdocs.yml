@@ -27,7 +27,6 @@ markdown_extensions:
   - md_in_html
   - tables
   - abbr
-  - attr_list
   - pymdownx.snippets
   - pymdownx.highlight:
       anchor_linenums: true
