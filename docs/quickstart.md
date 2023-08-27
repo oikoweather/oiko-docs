@@ -13,20 +13,40 @@ Let's start with a simple example - requesting temperature and wind speed data f
 
 The data is accessed using REST API by specifying the location, the parameters, and the time-range of the data needed as shown below.
 
+=== "Python"
+    ```py linenums="1"
+    import requests 
+    
+    api_key = 'your-api-key'
+    url = 'https://api.oikolab.com/weather'
 
-```py linenums="1"
-import requests
+    # Call the endpoint to get the data
+    r = requests.get(url,
+                     params={'param': 'temperature',
+                             'location': 'Toronto, Ontario',
+                             'start': '1990-01-01',
+                             'end': '2020-12-31'}
+                     headers={'api-key': api_key}
+                     )
+    ```
 
-api_key = 'your-api-key'
+=== "R"
+    ```r linenums="1"
+    library(httr)
+     
+    api_key <- 'your-api-key'
+    url <- 'https://api.oikolab.com/weather'
+    
+    # Call the endpoint to get the data
+    result <- GET(url,
+                  query=list(param='temperature',
+                             location='Toronto, Ontario',
+                             start='1990-01-01',
+                             end='2020-12-31'),
+                  add_headers('api-key'=api_key)
+                  )
+    ```
 
-r = requests.get('https://api.oikolab.com/weather',
-                 params={'param': ['temperature', 'wind_speed'],
-                         'location': 'Toronto, Ontario',
-                         'start': '1990-01-01',
-                         'end': '2020-12-31'}
-                 headers={'api-key': api_key}
-                 )
-```
 !!! note "Don't forget to use your API key!"
     You can find your API key on the profile page when you log into your account.
 
