@@ -31,12 +31,13 @@ format    | `json`, `csv`, or `netcdf`                     | Defaults to json fo
     import requests
     
     api_key = 'your-api-key'
+    url = 'https://api.oikolab.com/weather'
     
-    r = requests.get('https://api.oikolab.com/weather',
+    r = requests.get(url,
                      params={'param': ['temperature', 'wind_speed'],
-                             'lat': [32, 24, 40],
-                             'lat': [32, 24, 40],
-                             'location_id': ['store1', 'store2','store3'],
+                             'lat': [23.1, 42.1],
+                             'lon': [114.1, -79.3],
+                             'location_id': ['store1', 'store2'],
                              'start': '2022-01-01',
                              'end': '2022-12-31'}
                      headers={'api-key': api_key}
@@ -45,7 +46,20 @@ format    | `json`, `csv`, or `netcdf`                     | Defaults to json fo
 
 === "R"
     ```r linenums="1"
-    test
+    library(httr)
+    
+    api_key <- 'your-api-key'
+    url <- "https://api.oikolab.com/weather"
+    
+    queryString <- list(
+        param = 'temperature', param = 'wind_speed',    
+        start = '2022-01-01',
+        end = '2022-12-31',
+        lat = 23.1, lat = 42.1,
+        lon = 114.1, lon = -79.3,
+        location_id = 'store1', location_id = 'store2')
+    
+    response <- GET(url, query=queryString, add_headers('api-key'=api_key))
     ```
 
 **Example 2 - Requesting a region**
