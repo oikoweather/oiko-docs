@@ -1,0 +1,1031 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.oikolab.com/datasets/">
+      
+      
+        <link rel="prev" href="../quickstart/">
+      
+      
+        <link rel="next" href="../references/">
+      
+      
+      <link rel="icon" href="../img/favicon_600.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.5">
+    
+    
+      
+        <title>Weather Datasets & Parameters - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datasets" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://oikolab.com" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../img/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Weather Datasets & Parameters
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://oikolab.com" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../img/logo-white.png" alt="logo">
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Datasets & Parameters
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Datasets & Parameters
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-1-temperature" class="md-nav__link">
+    Group 1: Temperature
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-2-wind" class="md-nav__link">
+    Group 2: Wind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-3-radiation" class="md-nav__link">
+    Group 3: Radiation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-4-pressure-humidity-precipitation" class="md-nav__link">
+    Group 4: Pressure, Humidity, &amp; Precipitation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-5-other-parameters" class="md-nav__link">
+    Group 5: Other Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-6-air-quality" class="md-nav__link">
+    Group 6: Air Quality
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips-tricks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tips & Tricks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-1-temperature" class="md-nav__link">
+    Group 1: Temperature
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-2-wind" class="md-nav__link">
+    Group 2: Wind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-3-radiation" class="md-nav__link">
+    Group 3: Radiation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-4-pressure-humidity-precipitation" class="md-nav__link">
+    Group 4: Pressure, Humidity, &amp; Precipitation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-5-other-parameters" class="md-nav__link">
+    Group 5: Other Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-6-air-quality" class="md-nav__link">
+    Group 6: Air Quality
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="datasets">Datasets</h1>
+<p>The following datasets are currently available via API.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Dataset</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5">ERA5</a></td>
+<td>ERA5 is the latest generation of the reanalysis dataset produced by ECMWF, updated daily.  The next generation of reanalysis data, ERA6, is currently in the works and is expected to be released sometime in 2024. Surface data is available from 1940 to present with a 5-day delay.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecmwf.int/en/era5-land">ERA5Land</a></td>
+<td>ERA5Land data is a high-resolution dataset covering only the land, with about 9km x 9km resolution. Data is available from 1950 to present with a 5-day delay.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php">GFS</a></td>
+<td>Global Forecast System</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://cfs.ncep.noaa.gov/">CFS</a></td>
+<td>Climate Forecast System from NCEP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://rapidrefresh.noaa.gov/hrrr/">HRRR</a></td>
+<td>High-Resolution Rapid Refresh (HRRR) model</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://silam.fmi.fi/">SILAM</a></td>
+<td>SILAM is air quality dataset from the <a href="https://en.ilmatieteenlaitos.fi/">Finnish Meteorological Institute (FMI)</a></td>
+</tr>
+</tbody>
+</table>
+<p>For GFS and HRRR, we archive forecast data generated at 00Z and 12Z for up to 2 years.</p>
+<h2 id="parameters">Parameters</h2>
+<p>The following is a list of parameters available through Oikolab API. Please note that not all parameters will be available for every model.</p>
+<h3 id="group-1-temperature">Group 1: Temperature</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">temperature</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>Drybulb temperature of the air at 2 m above the surface of land, sea or inland waters.</td>
+</tr>
+<tr>
+<td style="text-align: left;">dewpoint_temperature</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>The temperature to which the air at 2 m above the surface of the Earth would have to be cooled for saturation to occur.</td>
+</tr>
+<tr>
+<td style="text-align: left;">wetbulb_temperature</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>The temperature read by a thermometer covered in water-soaked cloth over which air is passed. <a href="https://en.wikipedia.org/wiki/Wet-bulb_temperature">Reference</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">humidex_index</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>Humidex Index as defined by <a href="https://en.wikipedia.org/wiki/Humidex">Canadian Meteorologists</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">soil_temperature_level_1</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>Soil temperature at level 1 (0 - 7 cm), in the middle of layer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">soil_temperature_level_2</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>Soil temperature at level 2 (7 - 28 cm), in the middle of layer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">soil_temperature_level_3</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>Soil temperature at level 3 (28 - 100 cm), in the middle of layer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">soil_temperature_level_4</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>Soil temperature at level 4 (100 - 289 cm), in the middle of layer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">skin_temperature</td>
+<td style="text-align: center;"><em><sup>o</sup>C</em></td>
+<td>The theoretical temperature that is required to satisfy the surface energy balance; it represents the temperature of the uppermost surface layer, which has no heat capacity.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-2-wind">Group 2: Wind</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">wind_speed</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>Wind speed at 10 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">wind_direction</td>
+<td style="text-align: center;"><em>deg</em></td>
+<td>Wind direction at 10 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">10m_wind_gust</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>Instantaneous wind gust at 10 m above surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">10m_u_component_of_wind</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>U component of wind at 10 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">10m_v_component_of_wind</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>V component of wind at 10 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">100m_wind_speed</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>Wind speed at 100 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">100m_wind_direction</td>
+<td style="text-align: center;"><em>deg</em></td>
+<td>Wind direction at 100 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">100m_u_component_of_wind</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>U component of wind at 100 m above the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">100m_v_component_of_wind</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>V component of wind at 100 m above the surface.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-3-radiation">Group 3: Radiation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">surface_solar_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth. This parameter comprises both direct and diffuse solar radiation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_net_solar_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth minus the amount reflected by the Earth's surface (which is governed by the albedo). This value is positive downwards, following the ECMWF convention.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_thermal_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>Thermal radiation (longwave) emitted by the atmosphere and clouds that reaches a horizontal plane at the surface of the Earth.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_net_thermal_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>This parameter is the difference between downward and upward thermal radiation at the surface of the Earth. This value is positive downwards, following the ECMWF convention.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_direct_solar_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>Direct solar radiation (shortwave) reaching the surface of the Earth, passing through a horizontal plane.</td>
+</tr>
+<tr>
+<td style="text-align: left;">direct_normal_solar_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>Solar radiation received per unit area normal to the direction of the sun.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_diffuse_solar_radiation</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>Scattered solar radiation received per horizontal unit area on the surface.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-4-pressure-humidity-precipitation">Group 4: Pressure, Humidity, &amp; Precipitation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">relative_humidity</td>
+<td style="text-align: center;">-</td>
+<td>Relative humidity calculated from dewpoint temperature, drybulb temperature, and pressure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_pressure</td>
+<td style="text-align: center;"><em>Pa</em></td>
+<td>The pressure (force per unit area) of the atmosphere at the surface of land, sea, and inland water.</td>
+</tr>
+<tr>
+<td style="text-align: left;">mean_sea_level_pressure</td>
+<td style="text-align: center;"><em>Pa</em></td>
+<td>The pressure (force per unit area) of the atmosphere at sea level.</td>
+</tr>
+<tr>
+<td style="text-align: left;">total_cloud_cover</td>
+<td style="text-align: center;">-</td>
+<td>Single level field calculated from the cloud occurring at different model levels through the atmosphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">total_precipitation</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>The accumulated liquid and frozen water, comprising rain and snow, that falls to the Earth's surface. It is the sum of large-scale precipitation and convective precipitation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">snowfall</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>The accumulated snow that falls to the Earth's surface. It is the sum of large-scale snowfall and convective snowfall.</td>
+</tr>
+<tr>
+<td style="text-align: left;">volumetric_soil_water_layer_1</td>
+<td style="text-align: center;">-</td>
+<td>Soil moisture at level 1 (0 - 7 cm)</td>
+</tr>
+<tr>
+<td style="text-align: left;">volumetric_soil_water_layer_2</td>
+<td style="text-align: center;">-</td>
+<td>Soil moisture at level 2 (7 - 28 cm)</td>
+</tr>
+<tr>
+<td style="text-align: left;">volumetric_soil_water_layer_3</td>
+<td style="text-align: center;">-</td>
+<td>Soil moisture at level 3 (28 - 100 cm)</td>
+</tr>
+<tr>
+<td style="text-align: left;">volumetric_soil_water_layer_4</td>
+<td style="text-align: center;">-</td>
+<td>Soil moisture at level 4 (100 - 289 cm)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-5-other-parameters">Group 5: Other Parameters</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">boundary_layer_height</td>
+<td style="text-align: center;"><em>m</em></td>
+<td>The depth of air next to the Earth's surface which is most affected by the resistance to the transfer of momentum, heat, or moisture across the surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">cloud_base_height</td>
+<td style="text-align: center;"><em>m</em></td>
+<td>The height above the Earth's surface of the base of the lowest cloud layer, at the specified time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">convective_available_potential_energy</td>
+<td style="text-align: center;"><em>J/kg</em></td>
+<td>Indication of the instability (or stability) of the atmosphere and can be used to assess the potential for the development of convection, which can lead to heavy rainfall, thunderstorms, and other severe weather.</td>
+</tr>
+<tr>
+<td style="text-align: left;">convective_inhibition</td>
+<td style="text-align: center;"><em>J/kg</em></td>
+<td>This parameter is a measure of the amount of energy required for convection to commence.</td>
+</tr>
+<tr>
+<td style="text-align: left;">downward_uv_radiation_at_the_surface</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>The amount of ultraviolet (UV) radiation reaching the surface. It is the amount of radiation passing through a horizontal plane.</td>
+</tr>
+<tr>
+<td style="text-align: left;">evaporation</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>The accumulated amount of water that has evaporated from the Earth's surface, including a simplified representation of transpiration (from vegetation), into vapour in the air above.</td>
+</tr>
+<tr>
+<td style="text-align: left;">forecast_albedo</td>
+<td style="text-align: center;">-</td>
+<td>A measure of the reflectivity of the Earth's surface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">forecast_surface_roughness</td>
+<td style="text-align: center;"><em>m</em></td>
+<td>The aerodynamic roughness length in metres as a measure of the surface resistance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">friction_velocity</td>
+<td style="text-align: center;"><em>m/s</em></td>
+<td>A theoretical wind speed at the Earth's surface that expresses the magnitude of stress.</td>
+</tr>
+<tr>
+<td style="text-align: left;">high_cloud_cover</td>
+<td style="text-align: center;">-</td>
+<td>The proportion of a grid box covered by cloud occurring in the high levels of the troposphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">high_vegetation_cover</td>
+<td style="text-align: center;">-</td>
+<td>The fraction of the grid box that is covered with vegetation that is classified as "high". The values vary between 0 and 1 but do not vary in time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_area_index_high_vegetation</td>
+<td style="text-align: center;"><em>m<sup>2</sup>/m<sup>2</sup></em></td>
+<td>The surface area of one side of all the leaves found over an area of land for vegetation classified as "high".</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_area_index_low_vegetation</td>
+<td style="text-align: center;"><em>m<sup>2</sup>/m<sup>2</sup></em></td>
+<td>The surface area of one side of all the leaves found over an area of land for vegetation classified as "low".</td>
+</tr>
+<tr>
+<td style="text-align: left;">low_cloud_cover</td>
+<td style="text-align: center;">-</td>
+<td>The proportion of a grid box covered by cloud occurring in the lower levels of the troposphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">low_vegetation_cover</td>
+<td style="text-align: center;">-</td>
+<td>The fraction of the grid box that is covered with vegetation that is classified as "low". The values vary between 0 and 1 but do not vary in time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">medium_cloud_cover</td>
+<td style="text-align: center;">-</td>
+<td>The proportion of a grid box covered by cloud occurring in the middle levels of the troposphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">potential_evaporation</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>A measure of the extent to which near-surface atmospheric conditions are conducive to the process of evaporation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">skin_reservoir_content</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>The amount of water in the vegetation canopy and/or in a thin layer on the soil.</td>
+</tr>
+<tr>
+<td style="text-align: left;">sub_surface_runoff</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>The water  that drains away under the ground.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_latent_heat_flux</td>
+<td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
+<td>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earth's surface and the atmosphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">surface_runoff</td>
+<td style="text-align: center;"><em>mm</em></td>
+<td>The water  that drains away over the ground.</td>
+</tr>
+<tr>
+<td style="text-align: left;">total_column_rain_water</td>
+<td style="text-align: center;"><em>kg/m<sup>2</sup></em></td>
+<td>The total amount of water in droplets of raindrop size (which can fall to the surface as precipitation) in a column extending from the surface of the Earth to the top of the atmosphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">total_column_water_vapour</td>
+<td style="text-align: center;"><em>kg/m<sup>2</sup></em></td>
+<td>The total amount of water vapour in a column extending from the surface of the Earth to the top of the atmosphere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">zero_degree_level</td>
+<td style="text-align: center;"><em>m</em></td>
+<td>The height above the Earth's surface where the temperature passes from positive to negative values, corresponding to the top of a warm layer.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-6-air-quality">Group 6: Air Quality</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CO</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Carbon Monoxide</td>
+</tr>
+<tr>
+<td style="text-align: left;">NO</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Nitrogen Oxide</td>
+</tr>
+<tr>
+<td style="text-align: left;">NO2</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Nitrogen Dixoide</td>
+</tr>
+<tr>
+<td style="text-align: left;">O3</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Ozone</td>
+</tr>
+<tr>
+<td style="text-align: left;">PM10</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Particulate Matters (PM) inhalable particles, with diameters that are generally 10 micrometers and smaller</td>
+</tr>
+<tr>
+<td style="text-align: left;">PM25</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Particulate Matters (PM) inhalable particles, with diameters that are generally 2.5 micrometers and smaller</td>
+</tr>
+<tr>
+<td style="text-align: left;">SO2</td>
+<td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
+<td>Sulfur Dioxide</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Oikolab Ltd.
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/oikoweather" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/oikolab" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+    
+  </body>
+</html>
