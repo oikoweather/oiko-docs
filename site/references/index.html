@@ -16,23 +16,19 @@
       
         <link rel="next" href="../tips-tricks/">
       
-      
-        
-      
-      
       <link rel="icon" href="../img/favicon_600.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18+insiders-4.37.0">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
     
     
       
-        <title>API Reference - Oikolab Weather API Documentation</title>
+        <title>API Reference - Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.9c6232c5.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc776e4.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -56,6 +52,7 @@
 
     
     
+    
   </head>
   
   
@@ -67,13 +64,14 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
   
     
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#weather" class="md-skip">
+        <a href="#endpoints" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +87,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://oikolab.com" title="Oikolab Weather API Documentation" class="md-header__button md-logo" aria-label="Oikolab Weather API Documentation" data-md-component="logo">
+    <a href="https://oikolab.com" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="../img/logo-white.png" alt="logo">
 
@@ -101,7 +99,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Oikolab Weather API Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -115,7 +113,6 @@
     </div>
     
       
-    
     
     
     
@@ -175,39 +172,28 @@
                     
 
 
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://oikolab.com" title="Oikolab Weather API Documentation" class="md-nav__button md-logo" aria-label="Oikolab Weather API Documentation" data-md-component="logo">
+    <a href="https://oikolab.com" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="../img/logo-white.png" alt="logo">
 
     </a>
-    Oikolab Weather API Documentation
+    Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
       
       
+      
+
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
+        Overview
       </a>
     </li>
   
@@ -215,24 +201,14 @@
     
       
       
+      
+
   
   
   
     <li class="md-nav__item">
       <a href="../quickstart/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Quickstart
-  
-
-    
-  </span>
-  
-  
-
+        Quickstart
       </a>
     </li>
   
@@ -240,24 +216,14 @@
     
       
       
+      
+
   
   
   
     <li class="md-nav__item">
       <a href="../datasets/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Datasets & Parameters
-  
-
-    
-  </span>
-  
-  
-
+        Datasets & Parameters
       </a>
     </li>
   
@@ -265,6 +231,8 @@
     
       
       
+      
+
   
   
     
@@ -275,38 +243,16 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference
-  
-
-    
-  </span>
-  
-  
-
+          API Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference
-  
-
-    
-  </span>
-  
-  
-
+        API Reference
       </a>
       
         
@@ -314,6 +260,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -324,61 +272,35 @@
       
         <li class="md-nav__item">
   <a href="#weather" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /weather
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="/weather">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
+    /weather
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#archivedforecast" class="md-nav__link">
+    /archivedforecast
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#airquality" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /airquality
-      
-    </span>
+    /airquality
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#epw" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /epw
-      
-    </span>
+    /epw
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#datasets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /datasets
-      
-    </span>
+    /datasets
   </a>
   
 </li>
@@ -393,24 +315,14 @@
     
       
       
+      
+
   
   
   
     <li class="md-nav__item">
       <a href="../tips-tricks/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Tips & Tricks
-  
-
-    
-  </span>
-  
-  
-
+        Tips & Tricks
       </a>
     </li>
   
@@ -418,24 +330,14 @@
     
       
       
+      
+
   
   
   
     <li class="md-nav__item">
       <a href="../faq/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
+        FAQ
       </a>
     </li>
   
@@ -443,24 +345,14 @@
     
       
       
+      
+
   
   
   
     <li class="md-nav__item">
       <a href="../about/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    About
-  
-
-    
-  </span>
-  
-  
-
+        About
       </a>
     </li>
   
@@ -483,6 +375,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -492,61 +386,35 @@
       
         <li class="md-nav__item">
   <a href="#weather" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /weather
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="/weather">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
+    /weather
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#archivedforecast" class="md-nav__link">
+    /archivedforecast
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#airquality" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /airquality
-      
-    </span>
+    /airquality
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#epw" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /epw
-      
-    </span>
+    /epw
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#datasets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /datasets
-      
-    </span>
+    /datasets
   </a>
   
 </li>
@@ -561,16 +429,15 @@
           
           
             <div class="md-content" data-md-component="content">
-              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
-  <h1>API Reference</h1>
-
+<h1 id="endpoints">Endpoints</h1>
 <p>The following endpoints are available.</p>
 <h2 id="weather">/weather</h2>
+<p>This is the basic entry point into our datasets. </p>
 <table>
 <thead>
 <tr>
@@ -587,18 +454,18 @@
 </tr>
 <tr>
 <td>start</td>
-<td>start datetime string YYYY-MM-DD (UTC)</td>
+<td>start datetime string <code>YYYY-MM-DD</code></td>
 <td>Defaults to 3 days into the past. Provided time is interpreted as UTC.</td>
 </tr>
 <tr>
 <td>end</td>
-<td>end datetime string YYYY-MM-DD (UTC)</td>
+<td>end datetime string <code>YYYY-MM-DD</code></td>
 <td>Defaults to 7 days into the future. Provided time is interpreted as UTC.</td>
 </tr>
 <tr>
 <td>freq</td>
-<td>H (hourly), D (daily), or M (monthly)</td>
-<td>Defaults to H</td>
+<td><code>H</code> (hourly), <code>D</code> (daily), or <code>M</code> (monthly)</td>
+<td>Defaults to <code>H</code> (hourly)</td>
 </tr>
 <tr>
 <td>resample_method</td>
@@ -618,12 +485,12 @@
 <tr>
 <td>lat</td>
 <td>latitude(s)</td>
-<td>If location is not provided. Up to 100 locations allowed.</td>
+<td>If location is not provided.</td>
 </tr>
 <tr>
 <td>lon</td>
 <td>longitude(s)</td>
-<td>If location is not provided. Up to 100 locations allowed.</td>
+<td>If location is not provided.</td>
 </tr>
 <tr>
 <td>north</td>
@@ -647,17 +514,20 @@
 </tr>
 <tr>
 <td>model</td>
-<td>era5, era5land, gfs, gefs, hrrr, cfs</td>
+<td><code>era5</code>, <code>era5land</code>, <code>gfs</code>, <code>gefs</code>, <code>hrrr</code>, <code>cfs</code></td>
 <td>Use to specify dataset if applicable.</td>
 </tr>
 <tr>
 <td>format</td>
-<td>json, csv, or netcdf</td>
-<td>Defaults to json</td>
+<td><code>json</code>, <code>csv</code>, or <code>netcdf</code></td>
+<td>Defaults to json format.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="example">Example</h4>
+<p><strong>Example 1 - Requesting multiple locations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">R</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -670,20 +540,126 @@
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
 <span class="normal"><a href="#__codelineno-0-11">11</a></span>
 <span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/weather&#39;</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;param&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;wind_speed&#39;</span><span class="p">],</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>                         <span class="s1">&#39;location_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;store1&#39;</span><span class="p">,</span> <span class="s1">&#39;store2&#39;</span><span class="p">,</span><span class="s1">&#39;store3&#39;</span><span class="p">],</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>                         <span class="s1">&#39;start&#39;</span><span class="p">:</span> <span class="s1">&#39;2022-01-01&#39;</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>                         <span class="s1">&#39;end&#39;</span><span class="p">:</span> <span class="s1">&#39;2022-12-31&#39;</span><span class="p">}</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>                 <span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://api.oikolab.com/weather&#39;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;param&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;wind_speed&#39;</span><span class="p">],</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">23.1</span><span class="p">,</span> <span class="mf">42.1</span><span class="p">],</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>                         <span class="s1">&#39;lon&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">114.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3</span><span class="p">],</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>                         <span class="s1">&#39;location_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;store1&#39;</span><span class="p">,</span> <span class="s1">&#39;store2&#39;</span><span class="p">],</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>                         <span class="s1">&#39;start&#39;</span><span class="p">:</span> <span class="s1">&#39;2022-01-01&#39;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>                         <span class="s1">&#39;end&#39;</span><span class="p">:</span> <span class="s1">&#39;2022-12-31&#39;</span><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="language-r highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">api_key</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&#39;your-api-key&#39;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://api.oikolab.com/weather&quot;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="n">queryString</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="n">param</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;temperature&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">param</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;wind_speed&#39;</span><span class="p">,</span><span class="w">    </span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;2022-01-01&#39;</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;2022-12-31&#39;</span><span class="p">,</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="n">lat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">23.1</span><span class="p">,</span><span class="w"> </span><span class="n">lat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">42.1</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="n">lon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">114.1</span><span class="p">,</span><span class="w"> </span><span class="n">lon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-79.3</span><span class="p">,</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="n">location_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;store1&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">location_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;store2&#39;</span><span class="p">)</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">query</span><span class="o">=</span><span class="n">queryString</span><span class="p">,</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="s">&#39;api-key&#39;</span><span class="o">=</span><span class="n">api_key</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<p><strong>Example 2 - Requesting a region</strong></p>
+<p>Let's say we wanted to look at the regional weather forecast for all of New England. We can request the data by specifying the bounding box for New England as shown below:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/weather&#39;</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;north&#39;</span><span class="p">:</span> <span class="mf">47.38</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>                         <span class="s1">&#39;south&#39;</span><span class="p">:</span> <span class="mf">39.5</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>                         <span class="s1">&#39;east&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">65.2</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>                         <span class="s1">&#39;west&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">80.8</span><span class="p">,</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>                         <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="s1">&#39;hrrr&#39;</span><span class="p">}</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>                 <span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>This will return the data in NetCDF format, which we can see here:</p>
+<p><img alt="HRRR Forecast Data" src="https://oikostatic.nyc3.cdn.digitaloceanspaces.com/hrrr-ne.png" /></p>
+<h2 id="archivedforecast">/archivedforecast</h2>
+<p>Up to 4 years of HRRR model runs and 2 years of GFS runs (00z and 12z) are archived.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>param</td>
+<td>Valid parameters</td>
+<td>Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover</td>
+</tr>
+<tr>
+<td>location</td>
+<td>city name or zipcode</td>
+<td>This value is used to look up latitude/longitude.</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>latitude(s)</td>
+<td>If location is not provided. Up to 100 locations allowed.</td>
+</tr>
+<tr>
+<td>lon</td>
+<td>longitude(s)</td>
+<td>If location is not provided. Up to 100 locations allowed.</td>
+</tr>
+<tr>
+<td>utc_cycle</td>
+<td>datetime of the run (00z or 12z)</td>
+<td>This specifies the model run. E.g. <code>2023-07-01T12:00:00</code></td>
+</tr>
+<tr>
+<td>model</td>
+<td><code>gfs</code> or <code>hrrr</code></td>
+<td>This specifies the archived model (defaults to <code>gfs</code>).</td>
+</tr>
+</tbody>
+</table>
 <h2 id="airquality">/airquality</h2>
 <table>
 <thead>
@@ -716,28 +692,28 @@
 </tr>
 </tbody>
 </table>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">requests</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/airquality&#39;</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>                         <span class="s1">&#39;location_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;store1&#39;</span><span class="p">,</span> <span class="s1">&#39;store2&#39;</span><span class="p">,</span><span class="s1">&#39;store3&#39;</span><span class="p">],</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>                 <span class="p">)</span>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/airquality&#39;</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>                         <span class="s1">&#39;location_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;store1&#39;</span><span class="p">,</span> <span class="s1">&#39;store2&#39;</span><span class="p">,</span><span class="s1">&#39;store3&#39;</span><span class="p">],</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="epw">/epw</h2>
-<p>This API will return an EPW file for the given location and year (if applicable). Each EPW files will be 250 units. The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. This is most easily done via our Weather Downloader App, but if you require many hundreds of EPW files, this is probably easier to do.</p>
+<p>This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. Downloading EPW file can also be done via our <a href="https://downloader.oikolab.com">Weather Downloader App</a>, but if you require many hundreds of EPW files, downloading via API is easier to do.</p>
 <table>
 <thead>
 <tr>
@@ -769,43 +745,65 @@
 </tr>
 </tbody>
 </table>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">requests</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/epw&#39;</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>                         <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2020</span><span class="p">,</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>                 <span class="p">)</span>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/epw&#39;</span><span class="p">,</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a>                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mf">23.1</span><span class="p">,</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>                         <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mf">114.2</span><span class="p">,</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a>                         <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2020</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="datasets">/datasets</h2>
-<p>Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, use this API endpoint. There is no cost associated with this.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span>
-<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">requests</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/datasets&#39;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>                 <span class="p">)</span>
+<p>Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, use this API endpoint. This API call does not use any data units.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span>
+<span class="normal"><a href="#__codelineno-5-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/datasets&#39;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-
+<p>This call will return data in JSON format that lists the datasets the available date range for each dataset as shown below.</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">{</span><span class="s1">&#39;era5&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;start&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;1940-01-01 00 UTC&#39;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">          </span><span class="s1">&#39;end&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-18 14 UTC&#39;</span><span class="p">},</span><span class="w"> </span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w"> </span><span class="s1">&#39;hrrr&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;forecast_start&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-24 00 UTC&#39;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">          </span><span class="s1">&#39;forecast_end&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-26 00 UTC&#39;</span><span class="p">},</span><span class="w"> </span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w"> </span><span class="s1">&#39;gfs&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;forecast_start&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-23 18 UTC&#39;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">         </span><span class="s1">&#39;forecast_end&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-08-08 06 UTC&#39;</span><span class="p">},</span><span class="w"> </span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w"> </span><span class="s1">&#39;cfs&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;forecast_start&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-23 06 UTC&#39;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">         </span><span class="s1">&#39;forecast_end&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-11-01 00 UTC&#39;</span><span class="p">},</span><span class="w"> </span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w"> </span><span class="s1">&#39;silam&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;forecast_start&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-22 00 UTC&#39;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">           </span><span class="s1">&#39;forecast_end&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-27 00 UTC&#39;</span><span class="p">},</span><span class="w"> </span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 
 
 
@@ -816,7 +814,6 @@
             </div>
           
           
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -831,11 +828,6 @@
       Copyright &copy; 2023 Oikolab Ltd.
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs Insiders
-    </a>
   
 </div>
       
@@ -874,10 +866,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7c5c0157.min.js"></script>
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
