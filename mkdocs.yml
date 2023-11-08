@@ -1,5 +1,6 @@
 site_name: Documentation
 site_url: https://docs.oikolab.com
+site_description: Documentation for Oikolab API
 nav:
   - Overview: index.md
   - Quickstart: quickstart.md
