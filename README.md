@@ -11,3 +11,8 @@ Ref: https://squidfunk.github.io/mkdocs-material/reference/
 #### Building site
 
 `mkdocs build`
+
+
+#### Publishing site
+
+`mkdocs gh-deploy --force`
