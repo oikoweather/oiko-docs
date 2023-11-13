@@ -53,16 +53,18 @@ Here are some examples of what you can do with Oikolab API:
 
 We're always adding datasets. If you need something that we don’t have, please feel free to reach out and ask!
 
-| Type                        |       Dataset        |   Resolution   |         Coverage          |      Updates      | Source 
-|-----------------------------|:--------------------:|:--------------:|:-------------------------:|:-----------------:| :----: 
-| **Reanalysis**              | ERA5 <br/> ERA5-Land | 28km <br/> 9km | from 1940 <br/> from 1950 | Daily<br/>Monthly | ECMWF
-| **Global<br/>  Forecast**   |         GFS          |    13/25km     |          16 days          |       6 hrs       | NCEP
-| **Regional<br/>  Forecast** |         HRRR         |     2.5km      |          2 days           |       6 hrs       | NCEP
-| **Seasonal<br/>  Forecast** |         CFS          |     100km      |         9 months          |       Daily       | NCEP
-| **Ensemble Forecast**       |         GEFS         |      25km      |          10 days          |       6 hrs       | NCEP 
-| **Air Quality Forecast**    |        SILAM         |      20km      |          5 days           |       Daily       | FMI
+| Type                        |       Dataset        |   Resolution   |         Coverage          |      Updates      | Source |
+|-----------------------------|:--------------------:|:--------------:|:-------------------------:|:-----------------:|:------:|
+| **Reanalysis**              | ERA5 <br/> ERA5-Land | 28km <br/> 9km | from 1940 <br/> from 1950 | Daily<br/>Monthly | ECMWF  |
+| **Global<br/>  Forecast**   |         GFS          |    13/25km     |          16 days          |       6 hrs       |  NCEP  |
+| **Regional<br/>  Forecast** |         HRRR         |     2.5km      |          2 days           |       6 hrs       |  NCEP  |
+| **Seasonal<br/>  Forecast** |         CFS          |     100km      |         9 months          |       Daily       |  NCEP  |
+| **Ensemble Forecast**       |         GEFS         |      25km      |          10 days          |       6 hrs       |  NCEP  |
+| **Air Quality Forecast**    |        SILAM         |      20km      |          5 days           |       Daily       |  FMI   |
 
 *[ECMWF]: European Centre for Medium-Range Weather Forecasts
 *[NCEP]: National Centers for Environmental Prediction
 *[NOAA]: National Oceanic and Atmospheric Administration
 *[GRIB]: GRIdded Binary format
+*[EPW]: EnergyPlus Weather format
+*[AMY]: Actual Meteorological Year

@@ -6,23 +6,23 @@ The following endpoints are available.
 
 This is the basic entry point into our datasets. 
 
-Parameter | Description                                    | Notes
---------- |------------------------------------------------| -------------
-param     | Valid parameters                               | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover
-start     | start datetime string `YYYY-MM-DD`             | Defaults to 3 days into the past. Provided time is interpreted as UTC.
-end       | end datetime string `YYYY-MM-DD`               | Defaults to 7 days into the future. Provided time is interpreted as UTC.
-freq      | `H` (hourly), `D` (daily), or `M` (monthly)    | Defaults to `H` (hourly) 
-resample_method   | max, mean, min, or sum                 | When the frequency is set to daily (D) or monthly (M), use this to specify the aggregation method.
-location  | city name or zipcode                           | This value is used to look up latitude/longitude.
-location_id| reference for location                        | This is handy when making requests for multiple locations.
-lat       | latitude(s)                                    | If location is not provided. 
-lon       | longitude(s)                                   | If location is not provided. 
-north     | latitude north                                 | For bounding box.
-south     | latitude south                                 | For bounding box.
-east      | longitude east                                 | For bounding box.
-west      | longitude west                                 | For bounding box.
-model     | `era5`, `era5land`, `gfs`, `gefs`, `hrrr`, `cfs` | Use to specify dataset if applicable.
-format    | `json`, `csv`, or `netcdf`                     | Defaults to json format.
+| Parameter       | Description                                      | Notes |
+|-----------------|--------------------------------------------------| ------------- |
+| param           | Valid parameters                                 | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover |
+| start           | start datetime string `YYYY-MM-DD`               | Defaults to 3 days into the past. Provided time is interpreted as UTC. |
+| end             | end datetime string `YYYY-MM-DD`                 | Defaults to 7 days into the future. Provided time is interpreted as UTC. |
+| freq            | `H` (hourly), `D` (daily), or `M` (monthly)      | Defaults to `H` (hourly) |
+| resample_method | max, mean, min, or sum                           | When the frequency is set to daily (D) or monthly (M), use this to specify the aggregation method.|
+| location        | city name or zipcode                             | This value is used to look up latitude/longitude. |
+| location_id     | reference for location                           | This is handy when making requests for multiple locations. |
+| lat             | latitude(s)                                      | If location is not provided. |
+| lon             | longitude(s)                                     | If location is not provided. |
+| north           | latitude north                                   | For bounding box. |
+| south           | latitude south                                   | For bounding box. |
+| east            | longitude east                                   | For bounding box. |
+| west            | longitude west                                   | For bounding box. |
+| model           | `era5`, `era5land`, `gfs`, `gefs`, `hrrr`, `cfs` | Use to specify dataset if applicable. |
+|  format         | `json`, `csv`, or `netcdf`                       | Defaults to json format. |
 
 **Example 1 - Requesting multiple locations**
 
@@ -39,7 +39,7 @@ format    | `json`, `csv`, or `netcdf`                     | Defaults to json fo
                              'lon': [114.1, -79.3],
                              'location_id': ['store1', 'store2'],
                              'start': '2022-01-01',
-                             'end': '2022-12-31'}
+                             'end': '2022-12-31'},
                      headers={'api-key': api_key}
                      )
     ```
@@ -76,7 +76,7 @@ r = requests.get('https://api.oikolab.com/weather',
                          'south': 39.5,
                          'east': -65.2,
                          'west': -80.8,
-                         'model': 'hrrr'}
+                         'model': 'hrrr'},
                  headers={'api-key': api_key}
                  )
 ```
@@ -89,24 +89,24 @@ This will return the data in NetCDF format, which we can see here:
 
 Up to 4 years of HRRR model runs and 2 years of GFS runs (00z and 12z) are archived.
 
-Parameter | Description                       | Notes
---------- |-----------------------------------| -------------
-param     | Valid parameters                  | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover
-location  | city name or zipcode              | This value is used to look up latitude/longitude.
-lat       | latitude(s)                       | If location is not provided. Up to 100 locations allowed.
-lon       | longitude(s)                      | If location is not provided. Up to 100 locations allowed.
-utc_cycle | datetime of the run (00z or 12z)  | This specifies the model run. E.g. `2023-07-01T12:00:00`
-model     | `gfs` or `hrrr`                   | This specifies the archived model (defaults to `gfs`).
+| Parameter | Description                       | Notes |
+|----------|-----------------------------------| ------------- |
+| param    | Valid parameters                  | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover |
+| location | city name or zipcode              | This value is used to look up latitude/longitude. |
+| lat      | latitude(s)                       | If location is not provided. Up to 100 locations allowed. |
+| lon      | longitude(s)                      | If location is not provided. Up to 100 locations allowed. |
+| utc_cycle | datetime of the run (00z or 12z)  | This specifies the model run. E.g. `2023-07-01T12:00:00` |
+| model    | `gfs` or `hrrr`                   | This specifies the archived model (defaults to `gfs`).|
 
 
 ## /airquality
 
-Parameter | Description           | Notes
---------- |-----------------------| -------------
-param   | Valid parameters      | Default: NO, SO, PM10, PM25, Ozone
-location| city name or zipcode  | This value is used to look up latitude/longitude.
-lat     | latitude(s)           | If location is not provided. Up to 100 locations allowed.
-lon     | longitude(s)          | If location is not provided. Up to 100 locations allowed.
+| Parameter | Description          | Notes | 
+|----------|----------------------| ------------- |
+| param    | Valid parameters     | Default: NO, SO, PM10, PM25, Ozone |
+| location | city name or zipcode | This value is used to look up latitude/longitude. |
+| lat      | latitude(s)          | If location is not provided. Up to 100 locations allowed. |
+| lon      | longitude(s)         | If location is not provided. Up to 100 locations allowed. |
 
 ```py linenums="1"
 import requests
@@ -115,8 +115,8 @@ api_key = 'your-api-key'
 
 r = requests.get('https://api.oikolab.com/airquality',
                  params={'lat': [32, 24, 40],
-                         'lat': [32, 24, 40],
-                         'location_id': ['store1', 'store2','store3'],
+                         'lon': [32, 24, 40],
+                         'location_id': ['store1', 'store2','store3']},
                  headers={'api-key': api_key}
                  )
 ```
@@ -126,12 +126,12 @@ r = requests.get('https://api.oikolab.com/airquality',
 This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. Downloading EPW file can also be done via our [Weather Downloader App](https://downloader.oikolab.com), but if you require many hundreds of EPW files, downloading via API is easier to do.
 
 
-Parameter | Description            | Notes
---------- |------------------------| -------------
-location  | city name or zipcode   | This value is used to look up latitude/longitude.
-year      | year for AMY           | If not specified, a TMY file will be returned using the latest 15 years of data (180 months).
-lat       | latitude(s)            | If location is not provided.
-lon       | longitude(s)           | If location is not provided.
+| Parameter | Description            | Notes |
+|-----------|------------------------| ------------- |
+| location  | city name or zipcode   | This value is used to look up latitude/longitude. |
+| year      | year for AMY           | If not specified, a TMY file will be returned using the latest 15 years of data (180 months). | 
+| lat       | latitude(s)            | If location is not provided. |
+|  lon      | longitude(s)           | If location is not provided. |
 
 ```py linenums="1"
 import requests
@@ -140,8 +140,8 @@ api_key = 'your-api-key'
 
 r = requests.get('https://api.oikolab.com/epw',
                  params={'lat': 23.1,
-                         'lat': 114.2,
-                         'year': 2020,
+                         'lon': 114.2,
+                         'year': 2020},
                  headers={'api-key': api_key}
                  )
 ```
@@ -156,7 +156,7 @@ import requests
 
 api_key = 'your-api-key'
 
-r = requests.get('https://api.oikolab.com/datasets'
+r = requests.get('https://api.oikolab.com/datasets',
                  headers={'api-key': api_key}
                  )
 ```

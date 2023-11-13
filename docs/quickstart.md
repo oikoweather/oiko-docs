@@ -25,7 +25,7 @@ The data is accessed using REST API by specifying the location, the parameters, 
                      params={'param': 'temperature',
                              'location': 'Toronto, Ontario',
                              'start': '1990-01-01',
-                             'end': '2020-12-31'}
+                             'end': '2020-12-31'},
                      headers={'api-key': api_key}
                      )
     ```
@@ -64,3 +64,5 @@ df = pd.DataFrame(index=pd.to_datetime(weather_data['index'],unit='s'),
 ```
 
 {{ read_csv('./data/sample.csv') }}
+
+*[JSON]: JavaScript Object Notation
