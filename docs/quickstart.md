@@ -50,7 +50,7 @@ The data is accessed using REST API by specifying the location, the parameters, 
 !!! note "Don't forget to use your API key!"
     You can find your API key on the profile page when you log into your account.
 
-This will return data in JSON format, which we can convert to dataframe using Python's Pandas library. Note that the dataset name is returned so you always know which dataset was used to generate the data.
+This will return data in JSON format, which we can convert to dataframe using Python's [Pandas](https://pandas.pydata.org/) library. Note that the dataset name is returned so you always know which dataset was used to generate the data.
 
 ```py linenums="1"
 import pandas as pd

@@ -8,11 +8,11 @@ This is the basic entry point into our datasets.
 
 | Parameter       | Description                                      | Notes |
 |-----------------|--------------------------------------------------| ------------- |
-| param           | Valid parameters                                 | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover |
+| param           | Valid parameters                                 | Default: `temperature`, `dewpoint_temperature`, `wind_speed`, `mean_sea_level_pressure`, `surface_solar_radiation`, `surface_thermal_radiation`, `total_cloud_cover` |
 | start           | start datetime string `YYYY-MM-DD`               | Defaults to 3 days into the past. Provided time is interpreted as UTC. |
 | end             | end datetime string `YYYY-MM-DD`                 | Defaults to 7 days into the future. Provided time is interpreted as UTC. |
 | freq            | `H` (hourly), `D` (daily), or `M` (monthly)      | Defaults to `H` (hourly) |
-| resample_method | max, mean, min, or sum                           | When the frequency is set to daily (D) or monthly (M), use this to specify the aggregation method.|
+| resample_method | max, mean, min, or sum                           | When the frequency is set to daily (`D`) or monthly (`M`), use this to specify the aggregation method.|
 | location        | city name or zipcode                             | This value is used to look up latitude/longitude. |
 | location_id     | reference for location                           | This is handy when making requests for multiple locations. |
 | lat             | latitude(s)                                      | If location is not provided. |
@@ -91,7 +91,7 @@ Up to 4 years of HRRR model runs and 2 years of GFS runs (00z and 12z) are archi
 
 | Parameter | Description                       | Notes |
 |----------|-----------------------------------| ------------- |
-| param    | Valid parameters                  | Default: temperature, dewpoint_temperature, wind_speed, mean_sea_level_pressure, surface_solar_radiation, surface_thermal_radiation, total_cloud_cover |
+| param    | Valid parameters                  | Default: `temperature`, `dewpoint_temperature`, `wind_speed`, `mean_sea_level_pressure`, `surface_solar_radiation`, `surface_thermal_radiation`, `total_cloud_cover` |
 | location | city name or zipcode              | This value is used to look up latitude/longitude. |
 | lat      | latitude(s)                       | If location is not provided. Up to 100 locations allowed. |
 | lon      | longitude(s)                      | If location is not provided. Up to 100 locations allowed. |
@@ -102,8 +102,8 @@ Up to 4 years of HRRR model runs and 2 years of GFS runs (00z and 12z) are archi
 ## /airquality
 
 | Parameter | Description          | Notes | 
-|----------|----------------------| ------------- |
-| param    | Valid parameters     | Default: NO, SO, PM10, PM25, Ozone |
+|----------|----------------------| --------- |
+| param    | Valid parameters     | Default: `CO`, `NO`, `NO2`, `O3`, `PM10`, `PM25`, `SO2` |
 | location | city name or zipcode | This value is used to look up latitude/longitude. |
 | lat      | latitude(s)          | If location is not provided. Up to 100 locations allowed. |
 | lon      | longitude(s)         | If location is not provided. Up to 100 locations allowed. |
@@ -123,15 +123,15 @@ r = requests.get('https://api.oikolab.com/airquality',
 
 ## /epw
 
-This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly so it will take 10~15 seconds and is not limited to airport locations. Downloading EPW file can also be done via our [Weather Downloader App](https://downloader.oikolab.com), but if you require many hundreds of EPW files, downloading via API is easier to do.
+This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly and is not limited to airport locations. Downloading EPW file can also be done via our [Weather Downloader App](https://downloader.oikolab.com), but if you require many hundreds of EPW files, downloading via API is easier to do.
 
 
-| Parameter | Description            | Notes |
-|-----------|------------------------| ------------- |
-| location  | city name or zipcode   | This value is used to look up latitude/longitude. |
-| year      | year for AMY           | If not specified, a TMY file will be returned using the latest 15 years of data (180 months). | 
-| lat       | latitude(s)            | If location is not provided. |
-|  lon      | longitude(s)           | If location is not provided. |
+| Parameter | Description           | Notes                                                                                                              |
+|-----------|-----------------------|--------------------------------------------------------------------------------------------------------------------|
+| location  | city name or zipcode  | This value is used to look up latitude/longitude.                                                                  |
+| lat       | latitude              | If `location` parameter is not provided. We suggest using `lat`/`lon` if you need to specify a precise coordinate. |
+| lon       | longitude             | _See above_.                                                                                                       |
+| year      | year for AMY          | If not specified, a TMY file will be returned using the latest 15 years of data (180 months).                      | 
 
 ```py linenums="1"
 import requests
