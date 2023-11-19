@@ -23,5 +23,5 @@ r = requests.post('https://api.oikolab.com/weather',
 
 ### Notes on Precipitation
 
-Weather forecasting would be much simpler if we didn't have to deal with water. From clouds to hails and deluge, hydrodynamics of water in the atmosphere is an incredibly complex phenomenon which is not easily captured by reanalysis or even observation data. For application where this is critical, we recommend considering [CHIRP](https://www.chc.ucsb.edu/data/chirps) rain dataset.
+Weather forecasting would be much simpler if we didn't have to deal with water. From clouds to hails and deluge, hydrodynamics of water in the atmosphere is an incredibly complex phenomenon which is not easily captured by reanalysis or even observation data. For application where this is critical, we recommend considering [CHIRPS](https://www.chc.ucsb.edu/data/chirps) rain dataset.
 
