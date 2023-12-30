@@ -89,14 +89,14 @@ This will return the data in NetCDF format, which we can see here:
 
 Up to 3 years of model runs for GFS and HRRR (00z and 12z) are archived.
 
-| Parameter | Description                       | Notes |
-|----------|-----------------------------------| ------------- |
-| param    | Valid parameters                  | Default: `temperature`, `dewpoint_temperature`, `wind_speed`, `mean_sea_level_pressure`, `surface_solar_radiation`, `surface_thermal_radiation`, `total_cloud_cover` |
-| location | city name or zipcode              | This value is used to look up latitude/longitude. |
-| lat      | latitude(s)                       | If location is not provided. Up to 100 locations allowed. |
-| lon      | longitude(s)                      | If location is not provided. Up to 100 locations allowed. |
-| utc_cycle | datetime of the run (00z or 12z)  | This specifies the model run. E.g. `2023-07-01T12:00:00` |
-| model    | `gfs` or `hrrr`                   | This specifies the archived model (defaults to `gfs`).|
+| Parameter | Description                      | Notes |
+|-----------|----------------------------------| ------------- |
+| param     | Valid parameters                 | Default: `temperature`, `dewpoint_temperature`, `wind_speed`, `mean_sea_level_pressure`, `surface_solar_radiation`, `surface_thermal_radiation`, `total_cloud_cover` |
+| location  | city name or zipcode             | This value is used to look up latitude/longitude. |
+| lat       | latitude(s)                      | If location is not provided. Up to 100 locations allowed. |
+| lon       | longitude(s)                     | If location is not provided. Up to 100 locations allowed. |
+| utc_cycle | datetime of the run (00z or 12z) | This specifies the model run. E.g. `2023-07-01T12:00:00` |
+| model     | `gfs` or `hrrr`                  | This specifies the archived model (defaults to `gfs`).|
 
 
 ## /airquality
