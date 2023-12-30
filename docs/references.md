@@ -87,7 +87,7 @@ This will return the data in NetCDF format, which we can see here:
 
 ## /archivedforecast
 
-Up to 3 years of model runs for GFS and HRRR (00z and 12z) are archived.
+Up to 3 years of GFS and HRRR forecast data (00Z and 12Z runs) are archived.
 
 | Parameter | Description                      | Notes |
 |-----------|----------------------------------| ------------- |
