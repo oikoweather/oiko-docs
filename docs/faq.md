@@ -17,6 +17,10 @@ New weather forecast data is created every 6 to 12 hours and reanalysis datasets
 !!! note "Checking data source"
     With every data timestamp, we indicate the dataset source.
 
+### How do you derive data for a specific coordinate from the underlying dataset?
+
+The data is [bilinearly interpolated](https://en.wikipedia.org/wiki/Bilinear_interpolation) to the coordinate given. 
+
 ### What's the difference between Reanalysis vs. Observation data?
 
 We get this question a lot, especially from those who are used to getting weather data from weather stations. In engineering and science, we recognize that perfect observation is not possible and even if you're measuring air temperature with a digital thermometer, it is a modelled representation of the air temperature. 
