@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for Oikolab API">
+        <meta name="description" content="Detailed description on using the API.">
       
       
       
@@ -27,7 +27,7 @@
     
     
       
-        <title>API Reference - Documentation</title>
+        <title>API References - Documentation</title>
       
     
     
@@ -92,7 +92,7 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://oikolab.com" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo" target="_blank" rel="noopener">
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Reference
+              API References
             
           </span>
         </div>
@@ -165,13 +165,143 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+    
+  
+  Quickstart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../datasets/" class="md-tabs__link">
+        
+  
+    
+  
+  Datasets & Parameters
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tips-tricks/" class="md-tabs__link">
+        
+  
+    
+  
+  Tips & Tricks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -185,8 +315,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://oikolab.com" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo" target="_blank" rel="noopener">
       
@@ -345,6 +479,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="/weather">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requesting-multiple-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requesting multiple locations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requesting-a-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requesting a region
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -385,6 +547,17 @@
     <span class="md-ellipsis">
       
         /datasets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /account
       
     </span>
   </a>
@@ -481,87 +654,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#weather" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /weather
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#archivedforecast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /archivedforecast
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#airquality" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /airquality
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#epw" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /epw
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#datasets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /datasets
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -574,7 +666,7 @@
 <h1 id="endpoints">Endpoints</h1>
 <p>The following endpoints are available.</p>
 <h2 id="weather">/weather</h2>
-<p>This is the basic entry point into our datasets. </p>
+<p>This is the basic entry point into our datasets to request both historical and forecast weather data. </p>
 <table>
 <thead>
 <tr>
@@ -585,83 +677,83 @@
 </thead>
 <tbody>
 <tr>
-<td>param</td>
+<td><code>param</code></td>
 <td>Valid parameters</td>
 <td>Default: <code>temperature</code>, <code>dewpoint_temperature</code>, <code>wind_speed</code>, <code>mean_sea_level_pressure</code>, <code>surface_solar_radiation</code>, <code>surface_thermal_radiation</code>, <code>total_cloud_cover</code></td>
 </tr>
 <tr>
-<td>start</td>
+<td><code>start</code></td>
 <td>start datetime string <code>YYYY-MM-DD</code></td>
 <td>Defaults to 3 days into the past. Provided time is interpreted as UTC.</td>
 </tr>
 <tr>
-<td>end</td>
+<td><code>end</code></td>
 <td>end datetime string <code>YYYY-MM-DD</code></td>
 <td>Defaults to 7 days into the future. Provided time is interpreted as UTC.</td>
 </tr>
 <tr>
-<td>freq</td>
+<td><code>freq</code></td>
 <td><code>H</code> (hourly), <code>D</code> (daily), or <code>M</code> (monthly)</td>
 <td>Defaults to <code>H</code> (hourly)</td>
 </tr>
 <tr>
-<td>resample_method</td>
+<td><nobr><code>resample_method</code></nobr></td>
 <td>max, mean, min, or sum</td>
 <td>When the frequency is set to daily (<code>D</code>) or monthly (<code>M</code>), use this to specify the aggregation method.</td>
 </tr>
 <tr>
-<td>location</td>
+<td><code>location</code></td>
 <td>city name or zipcode</td>
 <td>This value is used to look up latitude/longitude.</td>
 </tr>
 <tr>
-<td>location_id</td>
+<td><code>location_id</code></td>
 <td>reference for location</td>
 <td>This is handy when making requests for multiple locations.</td>
 </tr>
 <tr>
-<td>lat</td>
+<td><code>lat</code></td>
 <td>latitude(s)</td>
 <td>If location is not provided.</td>
 </tr>
 <tr>
-<td>lon</td>
+<td><code>lon</code></td>
 <td>longitude(s)</td>
 <td>If location is not provided.</td>
 </tr>
 <tr>
-<td>north</td>
+<td><code>north</code></td>
 <td>latitude north</td>
 <td>For bounding box.</td>
 </tr>
 <tr>
-<td>south</td>
+<td><code>south</code></td>
 <td>latitude south</td>
 <td>For bounding box.</td>
 </tr>
 <tr>
-<td>east</td>
+<td><code>east</code></td>
 <td>longitude east</td>
 <td>For bounding box.</td>
 </tr>
 <tr>
-<td>west</td>
+<td><code>west</code></td>
 <td>longitude west</td>
 <td>For bounding box.</td>
 </tr>
 <tr>
-<td>model</td>
-<td><code>era5</code>, <code>era5land</code>, <code>gfs</code>, <code>gefs</code>, <code>hrrr</code>, <code>cfs</code></td>
+<td><code>model</code></td>
+<td><code>era5</code>, <code>era5land</code>, <code>gfs</code>, <code>gefs</code>, <code>hrrr</code>, <code>cfs</code>, <code>hrrr-subhourly</code>, <code>nam-conus</code></td>
 <td>Use to specify dataset if applicable.</td>
 </tr>
 <tr>
-<td>format</td>
+<td><code>format</code></td>
 <td><code>json</code>, <code>csv</code>, or <code>netcdf</code></td>
 <td>Defaults to json format.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example 1 - Requesting multiple locations</strong></p>
+<h3 id="requesting-multiple-locations">Requesting multiple locations</h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -726,8 +818,9 @@
 </div>
 </div>
 </div>
-<p><strong>Example 2 - Requesting a region</strong></p>
-<p>Let's say we wanted to look at the regional weather forecast for all of New England. We can request the data by specifying the bounding box for New England as shown below:</p>
+<h3 id="requesting-a-region">Requesting a region</h3>
+<p>Let's say we wanted to look at the regional weather forecast for all of New England. We can request the data by 
+specifying the bounding box for New England as shown below:</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -766,32 +859,32 @@
 </thead>
 <tbody>
 <tr>
-<td>param</td>
+<td><code>param</code></td>
 <td>Valid parameters</td>
 <td>Default: <code>temperature</code>, <code>dewpoint_temperature</code>, <code>wind_speed</code>, <code>mean_sea_level_pressure</code>, <code>surface_solar_radiation</code>, <code>surface_thermal_radiation</code>, <code>total_cloud_cover</code></td>
 </tr>
 <tr>
-<td>location</td>
+<td><code>location</code></td>
 <td>city name or zipcode</td>
 <td>This value is used to look up latitude/longitude.</td>
 </tr>
 <tr>
-<td>lat</td>
+<td><code>lat</code></td>
 <td>latitude(s)</td>
 <td>If location is not provided. Up to 100 locations allowed.</td>
 </tr>
 <tr>
-<td>lon</td>
+<td><code>lon</code></td>
 <td>longitude(s)</td>
 <td>If location is not provided. Up to 100 locations allowed.</td>
 </tr>
 <tr>
-<td>utc_cycle</td>
+<td><code>utc_cycle</code></td>
 <td>datetime of the run (00z or 12z)</td>
 <td>This specifies the model run. E.g. <code>2023-07-01T12:00:00</code></td>
 </tr>
 <tr>
-<td>model</td>
+<td><code>model</code></td>
 <td><code>gfs</code> or <code>hrrr</code></td>
 <td>This specifies the archived model (defaults to <code>gfs</code>).</td>
 </tr>
@@ -808,22 +901,22 @@
 </thead>
 <tbody>
 <tr>
-<td>param</td>
+<td><code>param</code></td>
 <td>Valid parameters</td>
 <td>Default: <code>CO</code>, <code>NO</code>, <code>NO2</code>, <code>O3</code>, <code>PM10</code>, <code>PM25</code>, <code>SO2</code></td>
 </tr>
 <tr>
-<td>location</td>
+<td><code>location</code></td>
 <td>city name or zipcode</td>
 <td>This value is used to look up latitude/longitude.</td>
 </tr>
 <tr>
-<td>lat</td>
+<td><code>lat</code></td>
 <td>latitude(s)</td>
 <td>If location is not provided. Up to 100 locations allowed.</td>
 </tr>
 <tr>
-<td>lon</td>
+<td><code>lon</code></td>
 <td>longitude(s)</td>
 <td>If location is not provided. Up to 100 locations allowed.</td>
 </tr>
@@ -850,7 +943,9 @@
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="epw">/epw</h2>
-<p>This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is generated from ERA5 data on the fly and is not limited to airport locations. Downloading EPW file can also be done via our <a href="https://downloader.oikolab.com" target="_blank" rel="noopener">Weather Downloader App</a>, but if you require many hundreds of EPW files, downloading via API is easier to do.</p>
+<p>This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is 
+generated from ERA5 data on the fly and is not limited to airport locations. Downloading EPW file can also be done 
+via our <a href="https://downloader.oikolab.com" target="_blank" rel="noopener">Weather Downloader App</a>, but if you require many hundreds of EPW files, downloading via API is easier to do.</p>
 <table>
 <thead>
 <tr>
@@ -861,22 +956,22 @@
 </thead>
 <tbody>
 <tr>
-<td>location</td>
+<td><code>location</code></td>
 <td>city name or zipcode</td>
 <td>This value is used to look up latitude/longitude.</td>
 </tr>
 <tr>
-<td>lat</td>
+<td><code>lat</code></td>
 <td>latitude</td>
 <td>If <code>location</code> parameter is not provided. We suggest using <code>lat</code>/<code>lon</code> if you need to specify a precise coordinate.</td>
 </tr>
 <tr>
-<td>lon</td>
+<td><code>lon</code></td>
 <td>longitude</td>
 <td><em>See above</em>.</td>
 </tr>
 <tr>
-<td>year</td>
+<td><code>year</code></td>
 <td>year for AMY</td>
 <td>If not specified, a TMY file will be returned using the latest 15 years of data (180 months).</td>
 </tr>
@@ -903,7 +998,8 @@
 </span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="datasets">/datasets</h2>
-<p>Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, use this API endpoint. This API call does not use any data units.</p>
+<p>Use this to get an update of the data. If you'd like to check that the data has been updated before making a call, 
+use this API endpoint. This API call does not use any data units.</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">3</a></span>
@@ -941,12 +1037,42 @@
 </span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">           </span><span class="s1">&#39;forecast_end&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2023-07-27 00 UTC&#39;</span><span class="p">},</span><span class="w"> </span>
 </span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
+<h2 id="account">/account</h2>
+<p>Use this to get information on your current API usage.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="n">api_key</span> <span class="o">=</span> <span class="s1">&#39;your-api-key&#39;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.oikolab.com/account&#39;</span><span class="p">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a>                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a>                 <span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>This will return JSON data that looks like this:</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span><span class="s2">&quot;incl_units_per_billing_period&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">300000</span><span class="p">,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">    </span><span class="s2">&quot;current_usage&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">2549138</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">    </span><span class="s2">&quot;daily_usage&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -970,7 +1096,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2023 Oikolab Ltd.
+      Copyright &copy; 2024 Oikolab Ltd.
     </div>
   
   
@@ -1012,7 +1138,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tabs", "navigation.expand", "navigation.tabs.sticky", "toc.integrate"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.a5ca32a6.min.js"></script>

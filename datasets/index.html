@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for Oikolab API">
+        <meta name="description" content="Oikolab API Documentation">
       
       
       
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#datasets" class="md-skip">
+        <a href="#parameters" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://oikolab.com" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo" target="_blank" rel="noopener">
       
@@ -165,13 +165,143 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+    
+  
+  Quickstart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Datasets & Parameters
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../references/" class="md-tabs__link">
+        
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tips-tricks/" class="md-tabs__link">
+        
+  
+    
+  
+  Tips & Tricks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -185,8 +315,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://oikolab.com" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo" target="_blank" rel="noopener">
       
@@ -260,8 +394,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -301,8 +433,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -509,115 +639,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Parameters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#group-1-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Group 1: Temperature
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group-2-wind" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Group 2: Wind
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group-3-radiation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Group 3: Radiation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group-4-pressure-humidity-precipitation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Group 4: Pressure, Humidity, &amp; Precipitation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group-5-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Group 5: Other Parameters
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group-6-air-quality" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Group 6: Air Quality
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -627,43 +648,8 @@
                   
 
 
-<h1 id="datasets">Datasets</h1>
-<p>The following datasets are currently available via API.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Dataset</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5" target="_blank" rel="noopener">ERA5</a></td>
-<td>ERA5 is the latest generation of the reanalysis dataset produced by ECMWF, updated daily.  The next generation of reanalysis data, ERA6, is currently in the works and is expected to be released sometime in 2024. Surface data is available from 1940 to present with a 5-day delay.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://www.ecmwf.int/en/era5-land" target="_blank" rel="noopener">ERA5Land</a></td>
-<td>ERA5Land data is a high-resolution dataset covering only the land, with about 9km x 9km resolution. Data is available from 1950 to present with a 5-day delay.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php" target="_blank" rel="noopener">GFS</a></td>
-<td>Global Forecast System</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://cfs.ncep.noaa.gov/" target="_blank" rel="noopener">CFS</a></td>
-<td>Climate Forecast System from NCEP</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://rapidrefresh.noaa.gov/hrrr/" target="_blank" rel="noopener">HRRR</a></td>
-<td>High-Resolution Rapid Refresh (HRRR) model</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://silam.fmi.fi/" target="_blank" rel="noopener">SILAM</a></td>
-<td>SILAM is air quality dataset from the <a href="https://en.ilmatieteenlaitos.fi/" target="_blank" rel="noopener">Finnish Meteorological Institute (FMI)</a></td>
-</tr>
-</tbody>
-</table>
-<p>For GFS and HRRR, we archive forecast data generated at 00Z and 12Z for up to 2 years.</p>
+  <h1>Datasets & Parameters</h1>
+
 <h2 id="parameters">Parameters</h2>
 <p>The following is a list of parameters available through Oikolab API. Please note that not all parameters will be available for every model.</p>
 <h3 id="group-1-temperature">Group 1: Temperature</h3>
@@ -677,47 +663,47 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">temperature</td>
+<td style="text-align: left;"><code>temperature</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>Drybulb temperature of the air at 2 m above the surface of land, sea or inland waters.</td>
 </tr>
 <tr>
-<td style="text-align: left;">dewpoint_temperature</td>
+<td style="text-align: left;"><code>dewpoint_temperature</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>The temperature to which the air at 2 m above the surface of the Earth would have to be cooled for saturation to occur.</td>
 </tr>
 <tr>
-<td style="text-align: left;">wetbulb_temperature</td>
+<td style="text-align: left;"><code>wetbulb_temperature</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>The temperature read by a thermometer covered in water-soaked cloth over which air is passed. <a href="https://en.wikipedia.org/wiki/Wet-bulb_temperature" target="_blank" rel="noopener">Reference</a></td>
 </tr>
 <tr>
-<td style="text-align: left;">humidex_index</td>
+<td style="text-align: left;"><code>humidex_index</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>Humidex Index as defined by <a href="https://en.wikipedia.org/wiki/Humidex" target="_blank" rel="noopener">Canadian Meteorologists</a></td>
 </tr>
 <tr>
-<td style="text-align: left;">soil_temperature_level_1</td>
+<td style="text-align: left;"><nobr><code>soil_temperature_level_1</code></nobr></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>Soil temperature at level 1 (0 - 7 cm), in the middle of layer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">soil_temperature_level_2</td>
+<td style="text-align: left;"><code>soil_temperature_level_2</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>Soil temperature at level 2 (7 - 28 cm), in the middle of layer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">soil_temperature_level_3</td>
+<td style="text-align: left;"><code>soil_temperature_level_3</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>Soil temperature at level 3 (28 - 100 cm), in the middle of layer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">soil_temperature_level_4</td>
+<td style="text-align: left;"><code>soil_temperature_level_4</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>Soil temperature at level 4 (100 - 289 cm), in the middle of layer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">skin_temperature</td>
+<td style="text-align: left;"><code>skin_temperature</code></td>
 <td style="text-align: center;"><em><sup>o</sup>C</em></td>
 <td>The theoretical temperature that is required to satisfy the surface energy balance; it represents the temperature of the uppermost surface layer, which has no heat capacity.</td>
 </tr>
@@ -734,47 +720,47 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">wind_speed</td>
+<td style="text-align: left;"><code>wind_speed</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>Wind speed at 10 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">wind_direction</td>
+<td style="text-align: left;"><code>wind_direction</code></td>
 <td style="text-align: center;"><em>deg</em></td>
 <td>Wind direction at 10 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">10m_wind_gust</td>
+<td style="text-align: left;"><code>10m_wind_gust</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>Instantaneous wind gust at 10 m above surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">10m_u_component_of_wind</td>
+<td style="text-align: left;"><code>10m_u_component_of_wind</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>U component of wind at 10 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">10m_v_component_of_wind</td>
+<td style="text-align: left;"><code>10m_v_component_of_wind</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>V component of wind at 10 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">100m_wind_speed</td>
+<td style="text-align: left;"><code>100m_wind_speed</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>Wind speed at 100 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">100m_wind_direction</td>
+<td style="text-align: left;"><code>100m_wind_direction</code></td>
 <td style="text-align: center;"><em>deg</em></td>
 <td>Wind direction at 100 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">100m_u_component_of_wind</td>
+<td style="text-align: left;"><code>100m_u_component_of_wind</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>U component of wind at 100 m above the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">100m_v_component_of_wind</td>
+<td style="text-align: left;"><code>100m_v_component_of_wind</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>V component of wind at 100 m above the surface.</td>
 </tr>
@@ -791,37 +777,37 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">surface_solar_radiation</td>
+<td style="text-align: left;"><code>surface_solar_radiation</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth. This parameter comprises both direct and diffuse solar radiation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_net_solar_radiation</td>
+<td style="text-align: left;"><code>surface_net_solar_radiation</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>Solar radiation (shortwave) that reaches a horizontal plane at the surface of the Earth minus the amount reflected by the Earth's surface (which is governed by the albedo). This value is positive downwards, following the ECMWF convention.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_thermal_radiation</td>
+<td style="text-align: left;"><code>surface_thermal_radiation</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>Thermal radiation (longwave) emitted by the atmosphere and clouds that reaches a horizontal plane at the surface of the Earth.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_net_thermal_radiation</td>
+<td style="text-align: left;"><code>surface_net_thermal_radiation</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>This parameter is the difference between downward and upward thermal radiation at the surface of the Earth. This value is positive downwards, following the ECMWF convention.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_direct_solar_radiation</td>
+<td style="text-align: left;"><code>surface_direct_solar_radiation</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>Direct solar radiation (shortwave) reaching the surface of the Earth, passing through a horizontal plane.</td>
 </tr>
 <tr>
-<td style="text-align: left;">direct_normal_solar_radiation</td>
+<td style="text-align: left;"><code>direct_normal_solar_radiation</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>Solar radiation received per unit area normal to the direction of the sun.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_diffuse_solar_radiation</td>
+<td style="text-align: left;"><nobr><code>surface_diffuse_solar_radiation</code></nobr></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>Scattered solar radiation received per horizontal unit area on the surface.</td>
 </tr>
@@ -838,52 +824,52 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">relative_humidity</td>
+<td style="text-align: left;"><code>relative_humidity</code></td>
 <td style="text-align: center;">-</td>
 <td>Relative humidity calculated from dewpoint temperature, drybulb temperature, and pressure.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_pressure</td>
+<td style="text-align: left;"><code>surface_pressure</code></td>
 <td style="text-align: center;"><em>Pa</em></td>
 <td>The pressure (force per unit area) of the atmosphere at the surface of land, sea, and inland water.</td>
 </tr>
 <tr>
-<td style="text-align: left;">mean_sea_level_pressure</td>
+<td style="text-align: left;"><code>mean_sea_level_pressure</code></td>
 <td style="text-align: center;"><em>Pa</em></td>
 <td>The pressure (force per unit area) of the atmosphere at sea level.</td>
 </tr>
 <tr>
-<td style="text-align: left;">total_cloud_cover</td>
+<td style="text-align: left;"><code>total_cloud_cover</code></td>
 <td style="text-align: center;">-</td>
 <td>Single level field calculated from the cloud occurring at different model levels through the atmosphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">total_precipitation</td>
+<td style="text-align: left;"><code>total_precipitation</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>The accumulated liquid and frozen water, comprising rain and snow, that falls to the Earth's surface. It is the sum of large-scale precipitation and convective precipitation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">snowfall</td>
+<td style="text-align: left;"><code>snowfall</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>The accumulated snow that falls to the Earth's surface. It is the sum of large-scale snowfall and convective snowfall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">volumetric_soil_water_layer_1</td>
+<td style="text-align: left;"><code>volumetric_soil_water_layer_1</code></td>
 <td style="text-align: center;">-</td>
 <td>Soil moisture at level 1 (0 - 7 cm)</td>
 </tr>
 <tr>
-<td style="text-align: left;">volumetric_soil_water_layer_2</td>
+<td style="text-align: left;"><code>volumetric_soil_water_layer_2</code></td>
 <td style="text-align: center;">-</td>
 <td>Soil moisture at level 2 (7 - 28 cm)</td>
 </tr>
 <tr>
-<td style="text-align: left;">volumetric_soil_water_layer_3</td>
+<td style="text-align: left;"><code>volumetric_soil_water_layer_3</code></td>
 <td style="text-align: center;">-</td>
 <td>Soil moisture at level 3 (28 - 100 cm)</td>
 </tr>
 <tr>
-<td style="text-align: left;">volumetric_soil_water_layer_4</td>
+<td style="text-align: left;"><nobr><code>volumetric_soil_water_layer_4</code></nobr></td>
 <td style="text-align: center;">-</td>
 <td>Soil moisture at level 4 (100 - 289 cm)</td>
 </tr>
@@ -900,122 +886,122 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">boundary_layer_height</td>
+<td style="text-align: left;"><code>boundary_layer_height</code></td>
 <td style="text-align: center;"><em>m</em></td>
 <td>The depth of air next to the Earth's surface which is most affected by the resistance to the transfer of momentum, heat, or moisture across the surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">cloud_base_height</td>
+<td style="text-align: left;"><code>cloud_base_height</code></td>
 <td style="text-align: center;"><em>m</em></td>
 <td>The height above the Earth's surface of the base of the lowest cloud layer, at the specified time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">convective_available_potential_energy</td>
+<td style="text-align: left;"><nobr><code>convective_available_potential_energy</code></nobr></td>
 <td style="text-align: center;"><em>J/kg</em></td>
 <td>Indication of the instability (or stability) of the atmosphere and can be used to assess the potential for the development of convection, which can lead to heavy rainfall, thunderstorms, and other severe weather.</td>
 </tr>
 <tr>
-<td style="text-align: left;">convective_inhibition</td>
+<td style="text-align: left;"><code>convective_inhibition</code></td>
 <td style="text-align: center;"><em>J/kg</em></td>
 <td>This parameter is a measure of the amount of energy required for convection to commence.</td>
 </tr>
 <tr>
-<td style="text-align: left;">downward_uv_radiation_at_the_surface</td>
+<td style="text-align: left;"><code>downward_uv_radiation_at_the_surface</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>The amount of ultraviolet (UV) radiation reaching the surface. It is the amount of radiation passing through a horizontal plane.</td>
 </tr>
 <tr>
-<td style="text-align: left;">evaporation</td>
+<td style="text-align: left;"><code>evaporation</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>The accumulated amount of water that has evaporated from the Earth's surface, including a simplified representation of transpiration (from vegetation), into vapour in the air above.</td>
 </tr>
 <tr>
-<td style="text-align: left;">forecast_albedo</td>
+<td style="text-align: left;"><code>forecast_albedo</code></td>
 <td style="text-align: center;">-</td>
 <td>A measure of the reflectivity of the Earth's surface.</td>
 </tr>
 <tr>
-<td style="text-align: left;">forecast_surface_roughness</td>
+<td style="text-align: left;"><code>forecast_surface_roughness</code></td>
 <td style="text-align: center;"><em>m</em></td>
 <td>The aerodynamic roughness length in metres as a measure of the surface resistance.</td>
 </tr>
 <tr>
-<td style="text-align: left;">friction_velocity</td>
+<td style="text-align: left;"><code>friction_velocity</code></td>
 <td style="text-align: center;"><em>m/s</em></td>
 <td>A theoretical wind speed at the Earth's surface that expresses the magnitude of stress.</td>
 </tr>
 <tr>
-<td style="text-align: left;">high_cloud_cover</td>
+<td style="text-align: left;"><code>high_cloud_cover</code></td>
 <td style="text-align: center;">-</td>
 <td>The proportion of a grid box covered by cloud occurring in the high levels of the troposphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">high_vegetation_cover</td>
+<td style="text-align: left;"><code>high_vegetation_cover</code></td>
 <td style="text-align: center;">-</td>
 <td>The fraction of the grid box that is covered with vegetation that is classified as "high". The values vary between 0 and 1 but do not vary in time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">leaf_area_index_high_vegetation</td>
+<td style="text-align: left;"><code>leaf_area_index_high_vegetation</code></td>
 <td style="text-align: center;"><em>m<sup>2</sup>/m<sup>2</sup></em></td>
 <td>The surface area of one side of all the leaves found over an area of land for vegetation classified as "high".</td>
 </tr>
 <tr>
-<td style="text-align: left;">leaf_area_index_low_vegetation</td>
+<td style="text-align: left;"><code>leaf_area_index_low_vegetation</code></td>
 <td style="text-align: center;"><em>m<sup>2</sup>/m<sup>2</sup></em></td>
 <td>The surface area of one side of all the leaves found over an area of land for vegetation classified as "low".</td>
 </tr>
 <tr>
-<td style="text-align: left;">low_cloud_cover</td>
+<td style="text-align: left;"><code>low_cloud_cover</code></td>
 <td style="text-align: center;">-</td>
 <td>The proportion of a grid box covered by cloud occurring in the lower levels of the troposphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">low_vegetation_cover</td>
+<td style="text-align: left;"><code>low_vegetation_cover</code></td>
 <td style="text-align: center;">-</td>
 <td>The fraction of the grid box that is covered with vegetation that is classified as "low". The values vary between 0 and 1 but do not vary in time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">medium_cloud_cover</td>
+<td style="text-align: left;"><code>medium_cloud_cover</code></td>
 <td style="text-align: center;">-</td>
 <td>The proportion of a grid box covered by cloud occurring in the middle levels of the troposphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">potential_evaporation</td>
+<td style="text-align: left;"><code>potential_evaporation</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>A measure of the extent to which near-surface atmospheric conditions are conducive to the process of evaporation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">skin_reservoir_content</td>
+<td style="text-align: left;"><code>skin_reservoir_content</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>The amount of water in the vegetation canopy and/or in a thin layer on the soil.</td>
 </tr>
 <tr>
-<td style="text-align: left;">sub_surface_runoff</td>
+<td style="text-align: left;"><code>sub_surface_runoff</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>The water  that drains away under the ground.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_latent_heat_flux</td>
+<td style="text-align: left;"><code>surface_latent_heat_flux</code></td>
 <td style="text-align: center;"><em>W/m<sup>2</sup></em></td>
 <td>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earth's surface and the atmosphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">surface_runoff</td>
+<td style="text-align: left;"><code>surface_runoff</code></td>
 <td style="text-align: center;"><em>mm</em></td>
 <td>The water  that drains away over the ground.</td>
 </tr>
 <tr>
-<td style="text-align: left;">total_column_rain_water</td>
+<td style="text-align: left;"><code>total_column_rain_water</code></td>
 <td style="text-align: center;"><em>kg/m<sup>2</sup></em></td>
 <td>The total amount of water in droplets of raindrop size (which can fall to the surface as precipitation) in a column extending from the surface of the Earth to the top of the atmosphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">total_column_water_vapour</td>
+<td style="text-align: left;"><code>total_column_water_vapour</code></td>
 <td style="text-align: center;"><em>kg/m<sup>2</sup></em></td>
 <td>The total amount of water vapour in a column extending from the surface of the Earth to the top of the atmosphere.</td>
 </tr>
 <tr>
-<td style="text-align: left;">zero_degree_level</td>
+<td style="text-align: left;"><code>zero_degree_level</code></td>
 <td style="text-align: center;"><em>m</em></td>
 <td>The height above the Earth's surface where the temperature passes from positive to negative values, corresponding to the top of a warm layer.</td>
 </tr>
@@ -1032,37 +1018,37 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">CO</td>
+<td style="text-align: left;"><code>CO</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Carbon Monoxide</td>
 </tr>
 <tr>
-<td style="text-align: left;">NO</td>
+<td style="text-align: left;"><code>NO</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Nitrogen Oxide</td>
 </tr>
 <tr>
-<td style="text-align: left;">NO2</td>
+<td style="text-align: left;"><code>NO2</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Nitrogen Dixoide</td>
 </tr>
 <tr>
-<td style="text-align: left;">O3</td>
+<td style="text-align: left;"><code>O3</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Ozone</td>
 </tr>
 <tr>
-<td style="text-align: left;">PM10</td>
+<td style="text-align: left;"><code>PM10</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Particulate Matters (PM) inhalable particles, with diameters that are generally 10 micrometers and smaller</td>
 </tr>
 <tr>
-<td style="text-align: left;">PM25</td>
+<td style="text-align: left;"><code>PM25</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Particulate Matters (PM) inhalable particles, with diameters that are generally 2.5 micrometers and smaller</td>
 </tr>
 <tr>
-<td style="text-align: left;">SO2</td>
+<td style="text-align: left;"><code>SO2</code></td>
 <td style="text-align: center;"><em>ug/m<sup>3</sup></em></td>
 <td>Sulfur Dioxide</td>
 </tr>
@@ -1100,7 +1086,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2023 Oikolab Ltd.
+      Copyright &copy; 2024 Oikolab Ltd.
     </div>
   
   
@@ -1142,7 +1128,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tabs", "navigation.expand", "navigation.tabs.sticky", "toc.integrate"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.a5ca32a6.min.js"></script>
