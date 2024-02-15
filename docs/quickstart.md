@@ -1,3 +1,8 @@
+---
+title: Quick Start
+description: Simple Python scripts to get you started.
+---
+
 # Quick Start
 
 *From zero to weather hero in 5 minutes.*

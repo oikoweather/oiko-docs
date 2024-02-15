@@ -1,5 +1,6 @@
 ---
 title: Oikolab FAQ
+description: FAQ on typical questions that may be asked about the service.
 ---
 
 ### What does 'Oiko' mean?
@@ -63,4 +64,4 @@ Alternatively, an area box for Texas will be:
 
 ### Can you provide custom datasets?
 
-Yes! Please contact us at info@oikolab.com for any special project needs.
+Yes! Please contact us at [support@oikolab.com](mailto:support@oikolab.com) for any special project needs.

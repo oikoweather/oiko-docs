@@ -1,3 +1,8 @@
+---
+title: Tips & Tricks
+description: More advanced features.
+---
+
 ### Specifying locations
 
 When specifying locations using latitude & longitude coordinates, there is no need to specify <a href="https://xkcd.com/2170/" target="_blank">more than two decimal places</a>.

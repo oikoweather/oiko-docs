@@ -1,6 +1,6 @@
 site_name: Documentation
 site_url: https://docs.oikolab.com
-site_description: Documentation for Oikolab API
+site_description: Oikolab API Documentation
 nav:
   - Overview: index.md
   - Quickstart: quickstart.md
@@ -13,6 +13,11 @@ theme:
   name: material
   features:
     - content.code.copy
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.tabs.sticky
+    - toc.integrate
   favicon: img/favicon_600.png
   logo: img/logo-white.png
   palette:
@@ -54,4 +59,4 @@ extra:
       link: https://www.linkedin.com/company/oikolab
 extra_css:
   - stylesheets/extra.css
-copyright: Copyright &copy; 2023 Oikolab Ltd.
+copyright: Copyright &copy; 2024 Oikolab Ltd.
