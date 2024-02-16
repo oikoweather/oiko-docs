@@ -17,7 +17,7 @@ access in seconds - whether you require 1 month or 80 years of weather data.
 
 Here are some examples of what you can do with Oikolab API:
 
-* **Building Simulation** - Download AMY EPW files for any location from 1940 to present. 
+* **Building Simulation** - Download TMY or AMY EPW files for any location from 1940 to present. 
 * **Asset Management** - Have assets in hundreds of locations? Download time-series weather data for all locations with a single API call.
 * **Climate Change Analysis** - Get decades of weather parameter time-series data in seconds.
 
@@ -32,14 +32,23 @@ These data are often publicly available, but come in a format (GRIB) that is ver
 === "ERA5"
 
     ![ERA5 Reanalysis Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/era5.png){align=left}
-    *[ERA5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) is the latest generation of the reanalysis dataset produced by ECMWF and is the main dataset that we use for
-     historical data. The next generation of reanalysis data, ERA6, is currently in the works and is expected to be 
-     released sometime in 2024. Surface data is available from 1940 to present with a 5-day delay.*
+    *[ERA5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) is the latest generation of the reanalysis 
+     dataset produced by ECMWF and is the main dataset that we use for historical data. The next generation of 
+     reanalysis data, ERA6, is currently in the works and is expected to be 
+     released sometime in 2024. *
+
+    *ERA5 surface data is available from 1940 to present with a 5-day delay, published at around 12 UTC by ECMWF. 
+    Once new data is downloaded, it is processed and made available via API with about 1 hour delay.*
+
 
 === "ERA5Land"
 
     ![ERA5Land Reanalysis Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/era5land.png){align=left}
-    *[ERA5Land](https://www.ecmwf.int/en/era5-land) dataset provides higher resolution (9km) than the ERA5 dataset for a selected set of surface-parameters.*
+    *[ERA5Land](https://www.ecmwf.int/en/era5-land) dataset provides higher resolution (9km) than the ERA5 dataset for 
+    a selected set of surface-parameters.*
+
+    *Data is available from 1950 to present with a 5-day delay, published at around 12 UTC by ECMWF. New data is 
+    downloaded, processed and made available via API with about 1~3 hour delay.*
 
 === "GFS"
 
@@ -47,17 +56,26 @@ These data are often publicly available, but come in a format (GRIB) that is ver
     *The Global Forecast System (GFS) is a numerical weather prediction model developed and maintained by the National 
     Centers for Environmental Prediction (NCEP), which is part of the National Weather Service (NWS) within the 
     National Oceanic and Atmospheric Administration (NOAA) in the United States. The GFS model is one of the most widely 
-    used operational weather forecasting models globally, providing forecasts on a global scale out to around two weeks into the future.*
+    used operational weather forecasting models globally, providing forecasts on a global scale out to 16 days into the future.*
+
+    *GFS data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z and published around 
+    [5 hr 10 minutes](https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat/index.html) after 
+    the initialized time. Once published, the dataset is downloaded and made available from Oikolab API with about 
+    15 minute delay.*
 
 === "GEFS"
 
     ![GEFS Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/gefs.png){align=left}
     *The Global Ensemble Forecast System (GEFS) is another numerical weather prediction model developed and 
-    maintained by the National Centers for Environmental Prediction (NCEP), which is part of the National Weather Service 
-    (NWS) within the National Oceanic and Atmospheric Administration (NOAA) in the United States. Unlike the Global Forecast 
+    maintained by the National Centers for Environmental Prediction (NCEP). Unlike the Global Forecast 
     System (GFS), which produces deterministic forecasts, the GEFS model generates ensemble forecasts, providing a 
     range of possible future weather scenarios based on multiple simulations with slightly different initial 
-    conditions or model configurations. .*
+    conditions or model configurations.*
+
+    *GEFS data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z and published around 
+    [6 hr 30 minutes after](https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat/index.html) 
+    the initialized time. Once published, the dataset is downloaded and made available from Oikolab API 
+    with about 15 minute delay.*
 
 === "CFS"
 
@@ -67,33 +85,46 @@ These data are often publicly available, but come in a format (GRIB) that is ver
     The CFS model is designed to predict climate variations on seasonal to interannual timescales, typically spanning 
     weeks to months into the future.*
 
+    *CFS data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z. 
+    Currently, only the CFS 00Z hour data is processed and made available from Oikolab API.*
+
+
 === "HRRR"
 
     ![HRRR Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/hrrr.png){align=left}
-    *The High-Resolution Rapid Refresh (HRRR) model is an advanced, high-resolution numerical weather prediction model 
-    developed by the National Centers for Environmental Prediction (NCEP), part of the National Weather Service (NWS) 
-    within the National Oceanic and Atmospheric Administration (NOAA) in the United States. The HRRR model is designed 
+    *The [High-Resolution Rapid Refresh (HRRR)](https://rapidrefresh.noaa.gov/hrrr/) model is 
+    an advanced, high-resolution numerical weather prediction model 
+    developed by the National Centers for Environmental Prediction (NCEP). The HRRR model is designed 
     to provide short-term, high-resolution forecasts of weather conditions, with a focus on convective weather 
     phenomena such as thunderstorms, heavy precipitation, and other rapidly evolving weather events.*
+
+    *HRRRR hourly dataset is published four times a day, initialized at 00Z, 06Z, 
+    12Z and 18Z with forecast out to 48 hours. Published about 1 hr 35 minutes after the initialization time, 
+    this dataset is made available from Oikolab with about 15 minute delay. HRRR-subhourly data is published from NCEP each 
+    hour with 1 hr and 25 minutes delay and is made available from Oikolab API with about 5 minute delay.*
+
 
 === "SILAM (Air Quality)"
 
     ![SILAM Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/silam.png){align=left}
     *The SILAM (System for Integrated modeLling of Atmospheric coMposition) dataset is an advanced modeling system 
     developed by the Finnish Meteorological Institute (FMI) for simulating and forecasting atmospheric composition, 
-    including air quality, aerosols, and chemical species such as ozone, nitrogen dioxide, sulfur dioxide, and particulate matter.*
+    including air quality, aerosols, and chemical species such as ozone, nitrogen dioxide, sulfur dioxide, 
+    and particulate matter.*
+
+    *SILAM data is published daily at around 06Z.*
 
 
 We're always adding datasets. If you need something that we don’t currently offer, please feel free to reach out and ask.
 
-| Type                        |                       Datasets (Source)                        |      Spatial Resolution       |         Temporal Resolution          |               Coverage               |                 Updates                  |
-|-----------------------------|:--------------------------------------------------------------:|:-----------------------------:|:------------------------------------:|:------------------------------------:|:----------------------------------------:|
-| **Historical Reanalysis**   |              ERA5 (ECMWF) <br/> ERA5-Land (ECMWF)              |        28km <br/> 9km         |         Hourly <br/> Hourly          |      from 1940 <br/> from 1950       | Daily (5-day lag) <br/>Daily (5-day lag) |
-| **Global<br/>  Forecast**   |                           GFS (NCEP)                           |            13/25km            |                Hourly                |               16 days                |                  6 hrs                   |
-| **Regional<br/>  Forecast** | HRRR (NCEP) <br/> HRRR-subhourly (NCEP) <br/> NAM-CONUS (NCEP) | 2.5km <br/> 2.5km <br/> 2.5km | Hourly <br/> 15 minutes <br/> Hourly | 2 days <br/> 18 hours <br/> 2.5 days |      6 hrs <br/> Hourly <br/> 6 hrs      |
-| **Seasonal<br/>  Forecast** |                           CFS (NCEP)                           |             100km             |               6 hours                |               9 months               |                  Daily                   |
-| **Ensemble Forecast**       |                          GEFS (NCEP)                           |             25km              |               3 hours                |               10 days                |                  6 hrs                   |
-| **Air Quality Forecast**    |                          SILAM (FMI)                           |             20km              |                Hourly                |                5 days                |                  Daily                   |
+| Type                             |                 Datasets                  | Spatial <br/> Resolution |    Temporal <br/> Resolution     |  Coverage / <br/> Forecast Horizon  | Notes                                                              |
+|----------------------------------|:-----------------------------------------:|:------------------------:|:--------------------------------:|:-----------------------------------:|:-------------------------------------------------------------------|
+| **Historical <br/>  Reanalysis** |           ERA5 <br/> ERA5-Land            |      28km <br/> 9km      |       Hourly <br/> Hourly        | 1940 - present <br/> 1950 - present | Data is made available with 5-day delay                            |        
+| **Global<br/>  Forecast**        |                    GFS                    |         13/25km          |              Hourly              |               16 days               | Hourly forecast steps up to 120 hr and 3-hours afterward           |        
+| **Regional<br/>  Forecast**      | HRRR <br/> HRRR-subhourly <br/> NAM-CONUS | 3km <br/> 3km <br/> 3km  | Hourly <br/> 15 min <br/> Hourly |  2 days <br/> 18 hrs <br/> 60 hrs   | Lambert conformal conic projection is re-mapped to regular lat/lon | 
+| **Seasonal<br/>  Forecast**      |                    CFS                    |          100km           |             6 hours              |              9 months               |                                                                    |  
+| **Ensemble<br/>  Forecast**      |                   GEFS                    |           25km           |             3 hours              |               10 days               |                                                                    | 
+| **Air Quality <br/>  Forecast**  |                   SILAM                   |           20km           |              Hourly              |               5 days                | Includes data from 5 previous days                                 | 
 
 *[ECMWF]: European Centre for Medium-Range Weather Forecasts
 *[NCEP]: National Centers for Environmental Prediction
@@ -102,3 +133,4 @@ We're always adding datasets. If you need something that we don’t currently of
 *[GRIB]: GRIdded Binary format
 *[EPW]: EnergyPlus Weather format
 *[AMY]: Actual Meteorological Year
+*[TMY]: Typical Meteorological Year
