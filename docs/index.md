@@ -117,14 +117,14 @@ These data are often publicly available, but come in a format (GRIB) that is ver
 
 We're always adding datasets. If you need something that we don’t currently offer, please feel free to reach out and ask.
 
-| Type                             |                 Datasets                  | Spatial <br/> Resolution |    Temporal <br/> Resolution     |  Coverage / <br/> Forecast Horizon  | Notes                                                              |
-|----------------------------------|:-----------------------------------------:|:------------------------:|:--------------------------------:|:-----------------------------------:|:-------------------------------------------------------------------|
-| **Historical <br/>  Reanalysis** |           ERA5 <br/> ERA5-Land            |      28km <br/> 9km      |       Hourly <br/> Hourly        | 1940 - present <br/> 1950 - present | Data is made available with 5-day delay                            |        
-| **Global<br/>  Forecast**        |                    GFS                    |         13/25km          |              Hourly              |               16 days               | Hourly forecast steps up to 120 hr and 3-hours afterward           |        
-| **Regional<br/>  Forecast**      | HRRR <br/> HRRR-subhourly <br/> NAM-CONUS | 3km <br/> 3km <br/> 3km  | Hourly <br/> 15 min <br/> Hourly |  2 days <br/> 18 hrs <br/> 60 hrs   | Lambert conformal conic projection is re-mapped to regular lat/lon | 
-| **Seasonal<br/>  Forecast**      |                    CFS                    |          100km           |             6 hours              |              9 months               |                                                                    |  
-| **Ensemble<br/>  Forecast**      |                   GEFS                    |           25km           |             3 hours              |               10 days               |                                                                    | 
-| **Air Quality <br/>  Forecast**  |                   SILAM                   |           20km           |              Hourly              |               5 days                | Includes data from 5 previous days                                 | 
+| Type                             |                        Datasets                        | Spatial <br/> Resolution |    Temporal <br/> Resolution     |  Coverage / <br/> Forecast Horizon  | Notes                                                                   |
+|----------------------------------|:------------------------------------------------------:|:------------------------:|:--------------------------------:|:-----------------------------------:|:------------------------------------------------------------------------|
+| **Historical <br/>  Reanalysis** |                  ERA5 <br/> ERA5-Land                  |      28km <br/> 9km      |       Hourly <br/> Hourly        | 1940 - present <br/> 1950 - present | Data is made available with 5-day delay                                 |        
+| **Global<br/>  Forecast**        |                          GFS                           |         13/25km          |              Hourly              |               16 days               | Hourly forecast steps up to 120 hr and 3-hours afterward                |        
+| **Regional<br/>  Forecast**      | HRRR <br/> <nobr>HRRR-subhourly</nobr> <br/> NAM-CONUS | 3km <br/> 3km <br/> 3km  | Hourly <br/> 15 min <br/> Hourly |  2 days <br/> 18 hrs <br/> 60 hrs   | Lambert conformal conic projection is re-mapped to regular lat/lon grid | 
+| **Seasonal<br/>  Forecast**      |                          CFS                           |          100km           |             6 hours              |              9 months               |                                                                         |  
+| **Ensemble<br/>  Forecast**      |                          GEFS                          |           25km           |             3 hours              |               10 days               |                                                                         | 
+| **Air Quality <br/>  Forecast**  |                         SILAM                          |           20km           |              Hourly              |               5 days                | Includes data from 5 previous days                                      | 
 
 *[ECMWF]: European Centre for Medium-Range Weather Forecasts
 *[NCEP]: National Centers for Environmental Prediction
