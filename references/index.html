@@ -679,7 +679,7 @@
 <tr>
 <td><code>param</code></td>
 <td>Valid parameters</td>
-<td>Default: <code>temperature</code>, <code>dewpoint_temperature</code>, <code>wind_speed</code>, <code>mean_sea_level_pressure</code>, <code>surface_solar_radiation</code>, <code>surface_thermal_radiation</code>, <code>total_cloud_cover</code></td>
+<td>Default: <code>temperature</code>, <code>dewpoint_temperature</code>, <code>mean_sea_level_pressure</code>, <code>wind_speed</code>, <code>100m_wind_speed</code>, <code>relative_humidity</code>, <code>surface_solar_radiation</code>, <code>surface_thermal_radiation</code>, <code>total_cloud_cover</code>, <code>total_precipitation</code></td>
 </tr>
 <tr>
 <td><code>start</code></td>
@@ -703,7 +703,7 @@
 </tr>
 <tr>
 <td><code>location</code></td>
-<td>city name or zipcode</td>
+<td>location string, such as address, city name or zipcode</td>
 <td>This value is used to look up latitude/longitude.</td>
 </tr>
 <tr>
@@ -714,12 +714,12 @@
 <tr>
 <td><code>lat</code></td>
 <td>latitude(s)</td>
-<td>If location is not provided.</td>
+<td>If <code>location</code> parameter is not provided.</td>
 </tr>
 <tr>
 <td><code>lon</code></td>
 <td>longitude(s)</td>
-<td>If location is not provided.</td>
+<td>If <code>location</code> parameter is not provided.</td>
 </tr>
 <tr>
 <td><code>north</code></td>
@@ -871,12 +871,12 @@ specifying the bounding box for New England as shown below:</p>
 <tr>
 <td><code>lat</code></td>
 <td>latitude(s)</td>
-<td>If location is not provided. Up to 100 locations allowed.</td>
+<td>If <code>location</code> parameter is not provided. Up to 100 locations allowed.</td>
 </tr>
 <tr>
 <td><code>lon</code></td>
 <td>longitude(s)</td>
-<td>If location is not provided. Up to 100 locations allowed.</td>
+<td>If <code>location</code> parameter is not provided. Up to 100 locations allowed.</td>
 </tr>
 <tr>
 <td><code>utc_cycle</code></td>
@@ -943,9 +943,9 @@ specifying the bounding box for New England as shown below:</p>
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>                 <span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="epw">/epw</h2>
-<p>This API will return an EnergyPlus Weather (EPW) file for the given location and year (if applicable). The EPW is 
-generated from ERA5 data on the fly and is not limited to airport locations. Downloading EPW file can also be done 
-via our <a href="https://downloader.oikolab.com" target="_blank" rel="noopener">Weather Downloader App</a>, but if you require many hundreds of EPW files, downloading via API is easier to do.</p>
+<p>This API will return an EnergyPlus Weather (<abbr title="EnergyPlus Weather format">EPW</abbr>) file for the given location and year (if applicable). The <abbr title="EnergyPlus Weather format">EPW</abbr> is 
+generated from ERA5 data on the fly and is not limited to airport locations. Downloading <abbr title="EnergyPlus Weather format">EPW</abbr> file can also be done 
+via our <a href="https://downloader.oikolab.com" target="_blank" rel="noopener">Weather Downloader App</a>, but if you require many hundreds of <abbr title="EnergyPlus Weather format">EPW</abbr> files, downloading via API is easier to do.</p>
 <table>
 <thead>
 <tr>
@@ -972,8 +972,8 @@ via our <a href="https://downloader.oikolab.com" target="_blank" rel="noopener">
 </tr>
 <tr>
 <td><code>year</code></td>
-<td>year for AMY</td>
-<td>If not specified, a TMY file will be returned using the latest 15 years of data (180 months).</td>
+<td>year for <abbr title="Actual Meteorological Year">AMY</abbr></td>
+<td>If not specified, a <abbr title="Typical Meteorological Year">TMY</abbr> file will be returned using the latest 15 years of data (180 months).</td>
 </tr>
 </tbody>
 </table>
