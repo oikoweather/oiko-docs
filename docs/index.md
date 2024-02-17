@@ -10,17 +10,9 @@ description: This page providees overview on Oikolab Weather API service and it'
 
 Data scientists or analysts often spend days or weeks looking for and processing historical weather data before they can 
 begin their analysis. Here’s where Oikolab comes in – we do the work, so you don’t have to. We save you the most valuable, 
-scarce, and non-renewable resource in the world – **<u>your time</u>**.
+scarce, and non-renewable resource in the world – **<u>your time</u>**. 
 
-Ready to jump right into your analysis? Oikolab has post-processed hundreds of terabytes of weather data that you can 
-access in seconds - whether you require 1 month or 80 years of weather data.
-
-Here are some examples of what you can do with Oikolab API:
-
-* **Building Simulation** - Download TMY or AMY EPW files for any location from 1940 to present. 
-* **Asset Management** - Have assets in hundreds of locations? Download time-series weather data for all locations with a single API call.
-* **Climate Change Analysis** - Get decades of weather parameter time-series data in seconds.
-
+Oikolab has post-processed hundreds of terabytes of weather data that you can access in seconds - whether you require 1 month or 80 years of weather data.
 
 ## Datasets
 
@@ -35,7 +27,7 @@ These data are often publicly available, but come in a format (GRIB) that is ver
     *[ERA5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) is the latest generation of the reanalysis 
      dataset produced by ECMWF and is the main dataset that we use for historical data. The next generation of 
      reanalysis data, ERA6, is currently in the works and is expected to be 
-     released sometime in 2024. *
+     released sometime in 2024.*
 
     *ERA5 surface data is available from 1940 to present with a 5-day delay, published at around 12 UTC by ECMWF. 
     Once new data is downloaded, it is processed and made available via API with about 1 hour delay.*
@@ -125,6 +117,16 @@ We're always adding datasets. If you need something that we don’t currently of
 | **Seasonal<br/>  Forecast**      |                          CFS                           |          100km           |             6 hours              |              9 months               |                                                                         |  
 | **Ensemble<br/>  Forecast**      |                          GEFS                          |           25km           |             3 hours              |               10 days               |                                                                         | 
 | **Air Quality <br/>  Forecast**  |                         SILAM                          |           20km           |              Hourly              |               5 days                | Includes data from 5 previous days                                      | 
+
+
+## Uses
+
+Here are some examples of what you can do with Oikolab API:
+
+* **Building Simulation** - Download TMY or AMY EPW files for any location from 1940 to present. 
+* **Asset Management** - Have assets in hundreds of locations? Download time-series weather data for all locations with a single API call.
+* **Climate Change Analysis** - Get decades of weather parameter time-series data in seconds.
+
 
 *[ECMWF]: European Centre for Medium-Range Weather Forecasts
 *[NCEP]: National Centers for Environmental Prediction
