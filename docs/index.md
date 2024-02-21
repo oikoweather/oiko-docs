@@ -19,8 +19,6 @@ Oikolab has post-processed hundreds of terabytes of weather data that you can ac
 We provide post-processed datasets from national weather agencies such as NCEP/NOAA, ECMWF, and Environment Canada. 
 These data are often publicly available, but come in a format (GRIB) that is very time consuming to download and use.
 
-
-
 === "ERA5"
 
     ![ERA5 Reanalysis Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/era5.png){align=left}
@@ -91,9 +89,9 @@ These data are often publicly available, but come in a format (GRIB) that is ver
     phenomena such as thunderstorms, heavy precipitation, and other rapidly evolving weather events.*
 
     *HRRRR hourly dataset is published four times a day, initialized at 00Z, 06Z, 
-    12Z and 18Z with forecast out to 48 hours. Published about 1 hr 35 minutes after the initialization time, 
-    this dataset is made available from Oikolab with about 15 minute delay. HRRR-subhourly data is published from NCEP each 
-    hour with 1 hr and 25 minutes delay and is made available from Oikolab API with about 5 minute delay.*
+    12Z and 18Z with forecast out to 48 hours and HRRR-subhourly data is published from NCEP each 
+    every hour. Once published by NCEP, both HRRR and HRRR-subhourly datasets are available from Oikolab with about 
+    5 minute delay.*
 
 
 === "SILAM (Air Quality)"
