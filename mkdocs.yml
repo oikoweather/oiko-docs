@@ -4,7 +4,7 @@ site_description: Oikolab API Documentation
 nav:
   - Overview: index.md
   - Quickstart: quickstart.md
-  - Datasets & Parameters: datasets.md
+  - Weather Parameters: parameters.md
   - API Reference: references.md
   - Tips & Tricks: tips-tricks.md
   - FAQ: faq.md
@@ -25,6 +25,7 @@ theme:
 plugins:
   - table-reader
   - search
+  - meta
   - privacy:
       links_attr_map:
         target: _blank
