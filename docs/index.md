@@ -91,7 +91,18 @@ These data are often publicly available, but come in a format (GRIB) that is ver
     *HRRRR hourly dataset is published four times a day, initialized at 00Z, 06Z, 
     12Z and 18Z with forecast out to 48 hours and HRRR-subhourly data is published from NCEP each 
     every hour. Once published by NCEP, both HRRR and HRRR-subhourly datasets are available from Oikolab with about 
-    5 minute delay.*
+    5-minute delay.*
+
+
+=== "NAM-CONUS"
+
+    ![NAM Forecast Data](https://oikostatic.nyc3.cdn.digitaloceanspaces.com/nam2.png){align=left}
+    *The [North American Mesoscale (NAM)](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) 
+    one of the National Centers For Environmental Prediction’s (NCEP) major models for producing weather forecasts. 
+    NAM generates multiple grids (or domains) of weather forecasts over the North American continent at various horizontal resolutions.*
+
+    *NAM dataset is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z with forecast out to 60 hours. 
+    Once published, NAM-CONUS data is made vailable from Oikolab with about 5-minute delay.*
 
 
 === "SILAM (Air Quality)"
@@ -134,3 +145,5 @@ Here are some examples of what you can do with Oikolab API:
 *[EPW]: EnergyPlus Weather format
 *[AMY]: Actual Meteorological Year
 *[TMY]: Typical Meteorological Year
+*[GEFS]: Global Ensemble Forecast System
+*[GFS]: Global Forecast System
