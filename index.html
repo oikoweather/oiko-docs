@@ -610,7 +610,7 @@ scarce, and non-renewable resource in the world – <strong><u>your time</u></st
 <h2 id="datasets">Datasets</h2>
 <p>We provide post-processed datasets from national weather agencies such as <abbr title="National Centers for Environmental Prediction">NCEP</abbr>/<abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>, <abbr title="European Centre for Medium-Range Weather Forecasts">ECMWF</abbr>, and Environment Canada. 
 These data are often publicly available, but come in a format (<abbr title="GRIdded Binary format">GRIB</abbr>) that is very time consuming to download and use.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:7"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ERA5</label><label for="__tabbed_1_2">ERA5Land</label><label for="__tabbed_1_3">GFS</label><label for="__tabbed_1_4">GEFS</label><label for="__tabbed_1_5">CFS</label><label for="__tabbed_1_6">HRRR</label><label for="__tabbed_1_7">SILAM (Air Quality)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:8"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ERA5</label><label for="__tabbed_1_2">ERA5Land</label><label for="__tabbed_1_3"><abbr title="Global Forecast System">GFS</abbr></label><label for="__tabbed_1_4"><abbr title="Global Ensemble Forecast System">GEFS</abbr></label><label for="__tabbed_1_5">CFS</label><label for="__tabbed_1_6">HRRR</label><label for="__tabbed_1_7">NAM-CONUS</label><label for="__tabbed_1_8">SILAM (Air Quality)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><img align="left" alt="ERA5 Reanalysis Data" src="assets/external/oikostatic.nyc3.cdn.digitaloceanspaces.com/era5.png">
@@ -630,23 +630,23 @@ downloaded, processed and made available via API with about 1~3 hour delay.</em>
 </div>
 <div class="tabbed-block">
 <p><img align="left" alt="GFS Forecast Data" src="assets/external/oikostatic.nyc3.cdn.digitaloceanspaces.com/gfs.png">
-<em>The Global Forecast System (GFS) is a numerical weather prediction model developed and maintained by the National 
+<em>The Global Forecast System (<abbr title="Global Forecast System">GFS</abbr>) is a numerical weather prediction model developed and maintained by the National 
 Centers for Environmental Prediction (<abbr title="National Centers for Environmental Prediction">NCEP</abbr>), which is part of the National Weather Service (NWS) within the 
-National Oceanic and Atmospheric Administration (<abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>) in the United States. The GFS model is one of the most widely 
+National Oceanic and Atmospheric Administration (<abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>) in the United States. The <abbr title="Global Forecast System">GFS</abbr> model is one of the most widely 
 used operational weather forecasting models globally, providing forecasts on a global scale out to 16 days into the future.</em></p>
-<p><em>GFS data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z and published around 
+<p><em><abbr title="Global Forecast System">GFS</abbr> data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z and published around 
 <a href="https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat/index.html" target="_blank" rel="noopener">5 hr 10 minutes</a> after 
 the initialized time. Once published, the dataset is downloaded and made available from Oikolab API with about 
 15 minute delay.</em></p>
 </div>
 <div class="tabbed-block">
 <p><img align="left" alt="GEFS Forecast Data" src="assets/external/oikostatic.nyc3.cdn.digitaloceanspaces.com/gefs.png">
-<em>The Global Ensemble Forecast System (GEFS) is another numerical weather prediction model developed and 
+<em>The Global Ensemble Forecast System (<abbr title="Global Ensemble Forecast System">GEFS</abbr>) is another numerical weather prediction model developed and 
 maintained by the National Centers for Environmental Prediction (<abbr title="National Centers for Environmental Prediction">NCEP</abbr>). Unlike the Global Forecast 
-System (GFS), which produces deterministic forecasts, the GEFS model generates ensemble forecasts, providing a 
+System (<abbr title="Global Forecast System">GFS</abbr>), which produces deterministic forecasts, the <abbr title="Global Ensemble Forecast System">GEFS</abbr> model generates ensemble forecasts, providing a 
 range of possible future weather scenarios based on multiple simulations with slightly different initial 
 conditions or model configurations.</em></p>
-<p><em>GEFS data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z and published around 
+<p><em><abbr title="Global Ensemble Forecast System">GEFS</abbr> data is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z and published around 
 <a href="https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat/index.html" target="_blank" rel="noopener">6 hr 30 minutes after</a> 
 the initialized time. Once published, the dataset is downloaded and made available from Oikolab API 
 with about 15 minute delay.</em></p>
@@ -670,7 +670,15 @@ phenomena such as thunderstorms, heavy precipitation, and other rapidly evolving
 <p><em>HRRRR hourly dataset is published four times a day, initialized at 00Z, 06Z, 
 12Z and 18Z with forecast out to 48 hours and HRRR-subhourly data is published from <abbr title="National Centers for Environmental Prediction">NCEP</abbr> each 
 every hour. Once published by <abbr title="National Centers for Environmental Prediction">NCEP</abbr>, both HRRR and HRRR-subhourly datasets are available from Oikolab with about 
-5 minute delay.</em></p>
+5-minute delay.</em></p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="NAM Forecast Data" src="assets/external/oikostatic.nyc3.cdn.digitaloceanspaces.com/nam2.png">
+<em>The <a href="https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale" target="_blank" rel="noopener">North American Mesoscale (NAM)</a> 
+one of the National Centers For Environmental Prediction’s (<abbr title="National Centers for Environmental Prediction">NCEP</abbr>) major models for producing weather forecasts. 
+NAM generates multiple grids (or domains) of weather forecasts over the North American continent at various horizontal resolutions.</em></p>
+<p><em>NAM dataset is published four times a day, initialized at 00Z, 06Z, 12Z and 18Z with forecast out to 60 hours. 
+Once published, NAM-CONUS data is made vailable from Oikolab with about 5-minute delay.</em></p>
 </div>
 <div class="tabbed-block">
 <p><img align="left" alt="SILAM Forecast Data" src="assets/external/oikostatic.nyc3.cdn.digitaloceanspaces.com/silam.png">
@@ -705,7 +713,7 @@ and particulate matter.</em></p>
 </tr>
 <tr>
 <td><strong>Global<br/>  Forecast</strong></td>
-<td style="text-align: center;">GFS</td>
+<td style="text-align: center;"><abbr title="Global Forecast System">GFS</abbr></td>
 <td style="text-align: center;">13/25km</td>
 <td style="text-align: center;">Hourly</td>
 <td style="text-align: center;">16 days</td>
@@ -729,7 +737,7 @@ and particulate matter.</em></p>
 </tr>
 <tr>
 <td><strong>Ensemble<br/>  Forecast</strong></td>
-<td style="text-align: center;">GEFS</td>
+<td style="text-align: center;"><abbr title="Global Ensemble Forecast System">GEFS</abbr></td>
 <td style="text-align: center;">25km</td>
 <td style="text-align: center;">3 hours</td>
 <td style="text-align: center;">10 days</td>
